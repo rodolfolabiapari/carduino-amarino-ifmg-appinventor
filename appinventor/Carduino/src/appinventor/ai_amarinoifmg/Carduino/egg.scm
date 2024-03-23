@@ -1,0 +1,4 @@
+#|
+$JSON
+{"YaVersion":"75","Source":"Form","Properties":{"$Name":"egg","$Type":"Form","$Version":"10","Uuid":"0","CloseScreenAnimation":"fade","OpenScreenAnimation":"fade","ScreenOrientation":"portrait","Scrollable":"False","Title":"Cara, que loucura!","$Components":[{"$Name":"VerticalArrangement1","$Type":"VerticalArrangement","$Version":"2","Uuid":"-1967042278","AlignHorizontal":"3","AlignVertical":"2","Width":"-2","Height":"-2","$Components":[{"$Name":"canvas_Egg","$Type":"Canvas","$Version":"7","Uuid":"1512756277","Width":"-2","Height":"-2"}]},{"$Name":"player","$Type":"Player","$Version":"4","Uuid":"-623942650"},{"$Name":"notificacao","$Type":"Notifier","$Version":"2","Uuid":"-674760818"}]}}
+|#

@@ -1,0 +1,876 @@
+<!DOCTYPE YACodeBlocks SYSTEM "support/save_format.dtd">
+<YACodeBlocks ya-version="75" lang-version="17">
+<Pages><Page page-name=" " page-color="237 245 211" page-width="3326" page-height="1585" page-drawer="My Definitions" >
+<PageBlocks>
+<Block id="5265" genus-name="number" >
+<Location><X>530</X><Y>1003</Y></Location>
+<Label>100</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="5263" ></BlockConnector></Plug>
+</Block>
+<Block id="5263" genus-name="Player-Vibrate" >
+<Location><X>332</X><Y>1000</Y></Location>
+<Label>player.Vibrate</Label>
+<BeforeBlockId>5196</BeforeBlockId>
+<Sockets num-sockets="1" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="milliseconds" position-type="single" con-block-id="5265" ></BlockConnector>
+</Sockets>
+</Block>
+<Block id="1804" genus-name="text" >
+<Location><X>641</X><Y>321</Y></Location>
+<Label>Caso o carro esteja se movendo para tr\u00e1s, pressionar esse bot\u00e3o far\u00e1 com que sua velocidade de r\u00e9 diminua, at\u00e9 que ent\u00e3o pare e comece a andar para frente.</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="1798" ></BlockConnector></Plug>
+</Block>
+<Block id="1802" genus-name="text" >
+<Location><X>641</X><Y>293</Y></Location>
+<Label> proporcionalmente. Existem 9 velocidades diferentes. Essa mesma fun\u00e7\u00e3o pode ser executada pelo comando de voz \"Frente\".\\n</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="1798" ></BlockConnector></Plug>
+</Block>
+<Block id="5195" genus-name="text" >
+<Location><X>2157</X><Y>1338</Y></Location>
+<Label>Sai da aplica\u00e7\u00e3o. Essa fun\u00e7\u00e3o pode ser executada pelo comando de voz \"Sair\".</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="5193" ></BlockConnector></Plug>
+</Block>
+<Block id="5193" genus-name="string-vappend" >
+<Location><X>2019</X><Y>1338</Y></Location>
+<Label>make text</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="5191" ></BlockConnector></Plug>
+<Sockets num-sockets="2" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="text" is-expandable="yes" position-type="single" con-block-id="5195" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="text" is-expandable="yes" position-type="single" ></BlockConnector>
+</Sockets>
+</Block>
+<BlockStub><StubParentName>label_Fechar.Text</StubParentName><StubParentGenus>read-write-property</StubParentGenus><Block id="5191" genus-name="componentSetter" >
+<Location><X>1843</X><Y>1335</Y></Location>
+<Comment>
+<Text>Texto bot\u00e3o \"fechar\".</Text><Location><X>1663</X><Y>1337</Y></Location><BoxSize><Width>131</Width><Height>31</Height></BoxSize></Comment>
+<Label>label_Fechar.Text</Label>
+<BeforeBlockId>4915</BeforeBlockId>
+<Sockets num-sockets="1" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="to" position-type="single" con-block-id="5193" ></BlockConnector>
+</Sockets>
+</Block>
+</BlockStub>
+<Block id="3532" genus-name="define-void" >
+<Location><X>1811</X><Y>902</Y></Location>
+<Comment>
+<Text>Textos dos bot\u00f5es de cabe\u00e7alho (topo).</Text><Location><X>1619</X><Y>891</Y></Location><BoxSize><Width>168</Width><Height>48</Height></BoxSize></Comment>
+<Label>texto_Botoes_Cabecalho</Label>
+<Sockets num-sockets="2" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="arg" is-expandable="yes" position-type="single" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="cmd" init-type="cmd" label="do" is-indented="yes" position-type="single" con-block-id="3681" ></BlockConnector>
+</Sockets>
+</Block>
+<BlockStub><StubParentName>label_Exib_Dist.Text</StubParentName><StubParentGenus>read-write-property</StubParentGenus><Block id="3681" genus-name="componentSetter" >
+<Location><X>1843</X><Y>931</Y></Location>
+<Comment>
+<Text>Texto bot\u00e3o \"monitoramento\".</Text><Location><X>1614</X><Y>932</Y></Location><BoxSize><Width>167</Width><Height>32</Height></BoxSize></Comment>
+<Label>label_Exib_Dist.Text</Label>
+<BeforeBlockId>3532</BeforeBlockId>
+<AfterBlockId>3716</AfterBlockId>
+<Sockets num-sockets="1" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="to" position-type="single" con-block-id="3683" ></BlockConnector>
+</Sockets>
+</Block>
+</BlockStub>
+<BlockStub><StubParentName>label_Sobre.Text</StubParentName><StubParentGenus>read-write-property</StubParentGenus><Block id="3716" genus-name="componentSetter" >
+<Location><X>1843</X><Y>1109</Y></Location>
+<Comment>
+<Text>Texto bot\u00e3o \"sobre\".</Text><Location><X>1658</X><Y>1104</Y></Location><BoxSize><Width>133</Width><Height>28</Height></BoxSize></Comment>
+<Label>label_Sobre.Text</Label>
+<BeforeBlockId>3681</BeforeBlockId>
+<AfterBlockId>4026</AfterBlockId>
+<Sockets num-sockets="1" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="to" position-type="single" con-block-id="3718" ></BlockConnector>
+</Sockets>
+</Block>
+</BlockStub>
+<BlockStub><StubParentName>label_Ajuda.Text</StubParentName><StubParentGenus>read-write-property</StubParentGenus><Block id="4026" genus-name="componentSetter" >
+<Location><X>1843</X><Y>1175</Y></Location>
+<Comment>
+<Text>Texto bot\u00e3o \"ajuda\".</Text><Location><X>1676</X><Y>1172</Y></Location><BoxSize><Width>128</Width><Height>29</Height></BoxSize></Comment>
+<Label>label_Ajuda.Text</Label>
+<BeforeBlockId>3716</BeforeBlockId>
+<AfterBlockId>4915</AfterBlockId>
+<Sockets num-sockets="1" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="to" position-type="single" con-block-id="4028" ></BlockConnector>
+</Sockets>
+</Block>
+</BlockStub>
+<BlockStub><StubParentName>label_OnOff.Text</StubParentName><StubParentGenus>read-write-property</StubParentGenus><Block id="4915" genus-name="componentSetter" >
+<Location><X>1843</X><Y>1241</Y></Location>
+<Comment>
+<Text>Texto bot\u00e3o \"on\/off\".</Text><Location><X>1678</X><Y>1228</Y></Location><BoxSize><Width>129</Width><Height>33</Height></BoxSize></Comment>
+<Label>label_OnOff.Text</Label>
+<BeforeBlockId>4026</BeforeBlockId>
+<AfterBlockId>5191</AfterBlockId>
+<Sockets num-sockets="1" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="to" position-type="single" con-block-id="4917" ></BlockConnector>
+</Sockets>
+</Block>
+</BlockStub>
+<Block id="4917" genus-name="string-vappend" >
+<Location><X>2013</X><Y>1244</Y></Location>
+<Label>make text</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="4915" ></BlockConnector></Plug>
+<Sockets num-sockets="3" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="text" is-expandable="yes" position-type="single" con-block-id="4919" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="text" is-expandable="yes" position-type="single" con-block-id="4921" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="text" is-expandable="yes" position-type="single" ></BlockConnector>
+</Sockets>
+</Block>
+<Block id="4921" genus-name="text" >
+<Location><X>2151</X><Y>1272</Y></Location>
+<Label>desconecta o aplicativo do dispositivo.</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="4917" ></BlockConnector></Plug>
+</Block>
+<Block id="4919" genus-name="text" >
+<Location><X>2151</X><Y>1244</Y></Location>
+<Label>Esse bot\u00e3o abre a janela de conex\u00e3o, caso o dispositivo ainda n\u00e3o esteja conectado, ou, caso cont\u00e1rio, </Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="4917" ></BlockConnector></Plug>
+</Block>
+<Block id="4028" genus-name="string-vappend" >
+<Location><X>2011</X><Y>1178</Y></Location>
+<Label>make text</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="4026" ></BlockConnector></Plug>
+<Sockets num-sockets="2" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="text" is-expandable="yes" position-type="single" con-block-id="4030" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="text" is-expandable="yes" position-type="single" ></BlockConnector>
+</Sockets>
+</Block>
+<Block id="4030" genus-name="text" >
+<Location><X>2149</X><Y>1178</Y></Location>
+<Label>Ao pressionar esse bot\u00e3o, essa tela de ajuda \u00e9 exibida. Pode ser executado pelo comando de voz \"Ajuda\".</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="4028" ></BlockConnector></Plug>
+</Block>
+<Block id="3718" genus-name="string-vappend" >
+<Location><X>2013</X><Y>1112</Y></Location>
+<Label>make text</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="3716" ></BlockConnector></Plug>
+<Sockets num-sockets="2" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="text" is-expandable="yes" position-type="single" con-block-id="3720" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="text" is-expandable="yes" position-type="single" ></BlockConnector>
+</Sockets>
+</Block>
+<Block id="3720" genus-name="text" >
+<Location><X>2151</X><Y>1112</Y></Location>
+<Label>Ao pressionar esse bot\u00e3o, \u00e9 exibida na tela, informa\u00e7\u00f5es sobre o programa. Pode ser executado, por meio do comando de voz \"Sobre\"</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="3718" ></BlockConnector></Plug>
+</Block>
+<Block id="3683" genus-name="string-vappend" >
+<Location><X>2033</X><Y>934</Y></Location>
+<Label>make text</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="3681" ></BlockConnector></Plug>
+<Sockets num-sockets="6" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="text" is-expandable="yes" position-type="single" con-block-id="3685" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="text" is-expandable="yes" position-type="single" con-block-id="3540" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="text" is-expandable="yes" position-type="single" con-block-id="3542" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="text" is-expandable="yes" position-type="single" con-block-id="3544" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="text" is-expandable="yes" position-type="single" con-block-id="3546" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="text" is-expandable="yes" position-type="single" ></BlockConnector>
+</Sockets>
+</Block>
+<Block id="3546" genus-name="text" >
+<Location><X>2171</X><Y>1046</Y></Location>
+<Label>A segunda fun\u00e7\u00e3o do bot\u00e3o pode ser executada pelo comando \"Monitoramento\".</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="3683" ></BlockConnector></Plug>
+</Block>
+<Block id="3544" genus-name="text" >
+<Location><X>2171</X><Y>1018</Y></Location>
+<Label>J\u00e1 a oculta\u00e7\u00e3o da mesma pode ser executada pelo comando \"Esconder Dist\u00e2ncia\".\\n</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="3683" ></BlockConnector></Plug>
+</Block>
+<Block id="3542" genus-name="text" >
+<Location><X>2171</X><Y>990</Y></Location>
+<Label> A fun\u00e7\u00e3o de exibi\u00e7\u00e3o de dist\u00e2ncia, pode ser executada pelo comando de voz \"Exibir Dist\u00e2ncia\".\\n</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="3683" ></BlockConnector></Plug>
+</Block>
+<Block id="3540" genus-name="text" >
+<Location><X>2171</X><Y>962</Y></Location>
+<Label> Por\u00e9m ao segurar esse bot\u00e3o, a tela de monitoramento de sensores \u00e9 aberta.\\n</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="3683" ></BlockConnector></Plug>
+</Block>
+<Block id="3685" genus-name="text" >
+<Location><X>2171</X><Y>934</Y></Location>
+<Label>Ao pressionar e soltar esse bot\u00e3o, \u00e9 exibido ou escondido na tela, a dist\u00e2ncia lida pelo sensor ultrass\u00f4nico.</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="3683" ></BlockConnector></Plug>
+</Block>
+<Block id="4830" genus-name="text" >
+<Location><X>2171</X><Y>795</Y></Location>
+<Label>O app informa, por meio do sintetizador de voz, qual a dist\u00e2ncia lida pelo sensor ultrass\u00f4nico.</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="4828" ></BlockConnector></Plug>
+</Block>
+<Block id="4828" genus-name="string-vappend" >
+<Location><X>2033</X><Y>795</Y></Location>
+<Label>make text</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="4826" ></BlockConnector></Plug>
+<Sockets num-sockets="2" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="text" is-expandable="yes" position-type="single" con-block-id="4830" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="text" is-expandable="yes" position-type="single" ></BlockConnector>
+</Sockets>
+</Block>
+<BlockStub><StubParentName>texto_Distancia.Text</StubParentName><StubParentGenus>read-write-property</StubParentGenus><Block id="4826" genus-name="componentSetter" >
+<Location><X>1841</X><Y>792</Y></Location>
+<Comment>
+<Text>Texto comando \"qual \u00e9 a dist\u00e2ncia\".</Text><Location><X>1588</X><Y>795</Y></Location><BoxSize><Width>197</Width><Height>34</Height></BoxSize></Comment>
+<Label>texto_Distancia.Text</Label>
+<BeforeBlockId>4528</BeforeBlockId>
+<Sockets num-sockets="1" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="to" position-type="single" con-block-id="4828" ></BlockConnector>
+</Sockets>
+</Block>
+</BlockStub>
+<Block id="4532" genus-name="text" >
+<Location><X>2159</X><Y>729</Y></Location>
+<Label>O app, se apresenta ao usu\u00e1rio, por meio do sintetizador de voz.</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="4530" ></BlockConnector></Plug>
+</Block>
+<Block id="4530" genus-name="string-vappend" >
+<Location><X>2021</X><Y>729</Y></Location>
+<Label>make text</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="4528" ></BlockConnector></Plug>
+<Sockets num-sockets="2" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="text" is-expandable="yes" position-type="single" con-block-id="4532" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="text" is-expandable="yes" position-type="single" ></BlockConnector>
+</Sockets>
+</Block>
+<BlockStub><StubParentName>texto_QuemE.Text</StubParentName><StubParentGenus>read-write-property</StubParentGenus><Block id="4528" genus-name="componentSetter" >
+<Location><X>1841</X><Y>726</Y></Location>
+<Comment>
+<Text>Texto comando \"quem \u00e9 voc\u00ea\".</Text><Location><X>1609</X><Y>728</Y></Location><BoxSize><Width>184</Width><Height>30</Height></BoxSize></Comment>
+<Label>texto_QuemE.Text</Label>
+<BeforeBlockId>3443</BeforeBlockId>
+<AfterBlockId>4826</AfterBlockId>
+<Sockets num-sockets="1" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="to" position-type="single" con-block-id="4530" ></BlockConnector>
+</Sockets>
+</Block>
+</BlockStub>
+<Block id="3459" genus-name="text" >
+<Location><X>2176</X><Y>486</Y></Location>
+<Label> Ela pode ser executada, por meio do comando de voz \"Estacionar\".</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="2935" ></BlockConnector></Plug>
+</Block>
+<BlockStub><StubParentName>texto_Comandos_Voz</StubParentName><StubParentGenus>define-void</StubParentGenus><Block id="3457" genus-name="caller-command" >
+<Location><X>331</X><Y>868</Y></Location>
+<Label>texto_Comandos_Voz</Label>
+<BeforeBlockId>2399</BeforeBlockId>
+<AfterBlockId>3538</AfterBlockId>
+</Block>
+</BlockStub>
+<Block id="3451" genus-name="text" >
+<Location><X>2199</X><Y>663</Y></Location>
+<Label>Al\u00e9m dos comando de voz explicados anteriormente, o dispositivo est\u00e1 preparado para reconhecer esses outros:</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="3445" ></BlockConnector></Plug>
+</Block>
+<Block id="3449" genus-name="text" >
+<Location><X>2199</X><Y>635</Y></Location>
+<Label>Esses comandos dever\u00e3o ser falados em voz clara e calmamente, para que o reconhecimento seja realizado com sucesso.\\n</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="3445" ></BlockConnector></Plug>
+</Block>
+<Block id="3447" genus-name="text" >
+<Location><X>2199</X><Y>607</Y></Location>
+<Label>Ao pressionar e soltar esse bot\u00e3o, o servi\u00e7o de reconhecimento de voz \u00e9 ativado e o usu\u00e1rio poder\u00e1 falar os comandos para o dispositivo, sem a necessidade de usar os bot\u00f5es para isso.\\n</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="3445" ></BlockConnector></Plug>
+</Block>
+<Block id="3445" genus-name="string-vappend" >
+<Location><X>2061</X><Y>607</Y></Location>
+<Label>make text</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="3443" ></BlockConnector></Plug>
+<Sockets num-sockets="4" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="text" is-expandable="yes" position-type="single" con-block-id="3447" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="text" is-expandable="yes" position-type="single" con-block-id="3449" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="text" is-expandable="yes" position-type="single" con-block-id="3451" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="text" is-expandable="yes" position-type="single" ></BlockConnector>
+</Sockets>
+</Block>
+<BlockStub><StubParentName>texto_Comando_Voz.Text</StubParentName><StubParentGenus>read-write-property</StubParentGenus><Block id="3443" genus-name="componentSetter" >
+<Location><X>1841</X><Y>604</Y></Location>
+<Comment>
+<Text>Texto bot\u00e3o reconhecedor de voz.</Text><Location><X>1592</X><Y>585</Y></Location><BoxSize><Width>193</Width><Height>28</Height></BoxSize></Comment>
+<Label>texto_Comando_Voz.Text</Label>
+<BeforeBlockId>3437</BeforeBlockId>
+<AfterBlockId>4528</AfterBlockId>
+<Sockets num-sockets="1" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="to" position-type="single" con-block-id="3445" ></BlockConnector>
+</Sockets>
+</Block>
+</BlockStub>
+<Block id="3437" genus-name="define-void" >
+<Location><X>1809</X><Y>575</Y></Location>
+<Comment>
+<Text>Textos comandos de voz.</Text><Location><X>1626</X><Y>571</Y></Location><BoxSize><Width>161</Width><Height>32</Height></BoxSize></Comment>
+<Label>texto_Comandos_Voz</Label>
+<Sockets num-sockets="2" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="arg" is-expandable="yes" position-type="single" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="cmd" init-type="cmd" label="do" is-indented="yes" position-type="single" con-block-id="3443" ></BlockConnector>
+</Sockets>
+</Block>
+<Block id="2939" genus-name="text" >
+<Location><X>2176</X><Y>458</Y></Location>
+<Label> Essa fun\u00e7\u00e3o \u00e9 um bot\u00e3o de emerg\u00eancia, que faz com que o carro pare, e n\u00e3o se desloque em nehum sentido.\\n</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="2935" ></BlockConnector></Plug>
+</Block>
+<Block id="2937" genus-name="text" >
+<Location><X>2176</X><Y>430</Y></Location>
+<Label>Quando o bot\u00e3o de reconhecimento de voz \u00e9 segurado, \u00e9 ativada uma fun\u00e7\u00e3o especial para esse bot\u00e3o.</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="2935" ></BlockConnector></Plug>
+</Block>
+<Block id="2935" genus-name="string-vappend" >
+<Location><X>2038</X><Y>430</Y></Location>
+<Label>make text</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="2933" ></BlockConnector></Plug>
+<Sockets num-sockets="4" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="text" is-expandable="yes" position-type="single" con-block-id="2937" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="text" is-expandable="yes" position-type="single" con-block-id="2939" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="text" is-expandable="yes" position-type="single" con-block-id="3459" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="text" is-expandable="yes" position-type="single" ></BlockConnector>
+</Sockets>
+</Block>
+<BlockStub><StubParentName>label_Voz_Parar.Text</StubParentName><StubParentGenus>read-write-property</StubParentGenus><Block id="2933" genus-name="componentSetter" >
+<Location><X>1842</X><Y>427</Y></Location>
+<Comment>
+<Text>Texto bot\u00e3o parar.</Text><Location><X>1678</X><Y>406</Y></Location><BoxSize><Width>114</Width><Height>31</Height></BoxSize></Comment>
+<Label>label_Voz_Parar.Text</Label>
+<BeforeBlockId>2635</BeforeBlockId>
+<Sockets num-sockets="1" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="to" position-type="single" con-block-id="2935" ></BlockConnector>
+</Sockets>
+</Block>
+</BlockStub>
+<Block id="2661" genus-name="text" >
+<Location><X>2188</X><Y>364</Y></Location>
+<Label> o carro diminuir\u00e1 sua velocidade de r\u00e9 gradativamente a cada clique.</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="2637" ></BlockConnector></Plug>
+</Block>
+<Block id="2657" genus-name="text" >
+<Location><X>2188</X><Y>336</Y></Location>
+<Label>Caso o usu\u00e1rio j\u00e1 tenha ativado essa fun\u00e7\u00e3o, e depois pressione e solte o bot\u00e3o de r\u00e9, o carro ir\u00e1 parar. Caso pressione e solte o bot\u00e3o de deslocamento para frente,</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="2637" ></BlockConnector></Plug>
+</Block>
+<Block id="2653" genus-name="text" >
+<Location><X>2198</X><Y>186</Y></Location>
+<Label> o carro diminuir\u00e1 sua velocidade gradativamente a cada clique.</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="2395" ></BlockConnector></Plug>
+</Block>
+<Block id="2651" genus-name="text" >
+<Location><X>2198</X><Y>158</Y></Location>
+<Label>Caso o usu\u00e1rio j\u00e1 tenha ativado essa fun\u00e7\u00e3o, e depois pressione e solte o bot\u00e3o de deslocamento para frente, o carro ir\u00e1 parar. Caso pressione e solte o bot\u00e3o de r\u00e9,</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="2395" ></BlockConnector></Plug>
+</Block>
+<Block id="2649" genus-name="text" >
+<Location><X>2188</X><Y>308</Y></Location>
+<Label>Essa mesma fun\u00e7\u00e3o tamb\u00e9m pode ser acessada pelo comnado de voz \"Afastar R\u00e1pido\".\\n</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="2637" ></BlockConnector></Plug>
+</Block>
+<Block id="2645" genus-name="text" >
+<Location><X>2198</X><Y>130</Y></Location>
+<Label>Essa mesma fun\u00e7\u00e3o tamb\u00e9m pode ser acessada pelo comando de voz \"Frente R\u00e1pido\".\\n</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="2395" ></BlockConnector></Plug>
+</Block>
+<Block id="2643" genus-name="text" >
+<Location><X>2188</X><Y>280</Y></Location>
+<Label> de aumentar gradativamente sua velocidade, desloque-se em velocidade m\u00e1xima para tr\u00e1s.\\n</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="2637" ></BlockConnector></Plug>
+</Block>
+<Block id="2639" genus-name="text" >
+<Location><X>2188</X><Y>252</Y></Location>
+<Label>Ao segurar o bot\u00e3o que desloca o ve\u00edculo para tr\u00e1s, uma fun\u00e7\u00e3o especial \u00e9 habilitada, e faz com que o carro ao inv\u00e9s</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="2637" ></BlockConnector></Plug>
+</Block>
+<Block id="2637" genus-name="string-vappend" >
+<Location><X>2050</X><Y>252</Y></Location>
+<Label>make text</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="2635" ></BlockConnector></Plug>
+<Sockets num-sockets="6" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="text" is-expandable="yes" position-type="single" con-block-id="2639" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="text" is-expandable="yes" position-type="single" con-block-id="2643" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="text" is-expandable="yes" position-type="single" con-block-id="2649" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="text" is-expandable="yes" position-type="single" con-block-id="2657" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="text" is-expandable="yes" position-type="single" con-block-id="2661" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="text" is-expandable="yes" position-type="single" ></BlockConnector>
+</Sockets>
+</Block>
+<BlockStub><StubParentName>label_Tras_Rapido.Text</StubParentName><StubParentGenus>read-write-property</StubParentGenus><Block id="2635" genus-name="componentSetter" >
+<Location><X>1842</X><Y>249</Y></Location>
+<Comment>
+<Text>Texto seta tr\u00e1s r\u00e1pido.</Text><Location><X>1659</X><Y>255</Y></Location><BoxSize><Width>135</Width><Height>32</Height></BoxSize></Comment>
+<Label>label_Tras_Rapido.Text</Label>
+<BeforeBlockId>2391</BeforeBlockId>
+<AfterBlockId>2933</AfterBlockId>
+<Sockets num-sockets="1" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="to" position-type="single" con-block-id="2637" ></BlockConnector>
+</Sockets>
+</Block>
+</BlockStub>
+<Block id="2397" genus-name="text" >
+<Location><X>2198</X><Y>102</Y></Location>
+<Label> de aumentar gradativamente sua velocidade, desloque-se em velocidade m\u00e1xima para frente.\\n</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="2395" ></BlockConnector></Plug>
+</Block>
+<BlockStub><StubParentName>texto_Controle_Especiais</StubParentName><StubParentGenus>define-void</StubParentGenus><Block id="2399" genus-name="caller-command" >
+<Location><X>331</X><Y>840</Y></Location>
+<Label>texto_Controle_Especiais</Label>
+<BeforeBlockId>1406</BeforeBlockId>
+<AfterBlockId>3457</AfterBlockId>
+</Block>
+</BlockStub>
+<Block id="2393" genus-name="text" >
+<Location><X>2198</X><Y>74</Y></Location>
+<Label>Ao segurar o bot\u00e3o que desloca o ve\u00edculo para frente, uma fun\u00e7\u00e3o especial \u00e9 habilitada, e faz com que o carro ao inv\u00e9s</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="2395" ></BlockConnector></Plug>
+</Block>
+<Block id="2395" genus-name="string-vappend" >
+<Location><X>2060</X><Y>74</Y></Location>
+<Label>make text</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="2391" ></BlockConnector></Plug>
+<Sockets num-sockets="6" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="text" is-expandable="yes" position-type="single" con-block-id="2393" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="text" is-expandable="yes" position-type="single" con-block-id="2397" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="text" is-expandable="yes" position-type="single" con-block-id="2645" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="text" is-expandable="yes" position-type="single" con-block-id="2651" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="text" is-expandable="yes" position-type="single" con-block-id="2653" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="text" is-expandable="yes" position-type="single" ></BlockConnector>
+</Sockets>
+</Block>
+<BlockStub><StubParentName>label_Frente_Rapido.Text</StubParentName><StubParentGenus>read-write-property</StubParentGenus><Block id="2391" genus-name="componentSetter" >
+<Location><X>1842</X><Y>71</Y></Location>
+<Comment>
+<Text>Textoo seta frente r\u00e1pido.</Text><Location><X>1640</X><Y>92</Y></Location><BoxSize><Width>154</Width><Height>33</Height></BoxSize></Comment>
+<Label>label_Frente_Rapido.Text</Label>
+<BeforeBlockId>2060</BeforeBlockId>
+<AfterBlockId>2635</AfterBlockId>
+<Sockets num-sockets="1" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="to" position-type="single" con-block-id="2395" ></BlockConnector>
+</Sockets>
+</Block>
+</BlockStub>
+<Block id="2060" genus-name="define-void" >
+<Location><X>1810</X><Y>42</Y></Location>
+<Comment>
+<Text>Texto dos controles especiais.</Text><Location><X>1623</X><Y>18</Y></Location><BoxSize><Width>180</Width><Height>35</Height></BoxSize></Comment>
+<Label>texto_Controle_Especiais</Label>
+<Sockets num-sockets="2" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="arg" is-expandable="yes" position-type="single" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="cmd" init-type="cmd" label="do" is-indented="yes" position-type="single" con-block-id="2391" ></BlockConnector>
+</Sockets>
+</Block>
+<Block id="2057" genus-name="close-screen" >
+<Location><X>55</X><Y>365</Y></Location>
+<Comment>
+<Text>Fecha a tela.</Text><Location><X>227</X><Y>365</Y></Location><BoxSize><Width>93</Width><Height>29</Height></BoxSize></Comment>
+<Label>close screen</Label>
+<BeforeBlockId>2053</BeforeBlockId>
+</Block>
+<Block id="1484" genus-name="define-void" >
+<Location><X>299</X><Y>567</Y></Location>
+<Comment>
+<Text>Procedimento que cria os textos de cabe\u00e7alho. </Text><Location><X>124</X><Y>553</Y></Location><BoxSize><Width>140</Width><Height>41</Height></BoxSize></Comment>
+<Label>cria_Cabecalhos</Label>
+<Sockets num-sockets="2" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="arg" is-expandable="yes" position-type="single" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="cmd" init-type="cmd" label="do" is-indented="yes" position-type="single" con-block-id="2242" ></BlockConnector>
+</Sockets>
+</Block>
+<BlockStub><StubParentName>texto_Conexao.Text</StubParentName><StubParentGenus>read-write-property</StubParentGenus><Block id="2242" genus-name="componentSetter" >
+<Location><X>331</X><Y>596</Y></Location>
+<Comment>
+<Text>Texto sobre conex\u00e3o.</Text><Location><X>137</X><Y>613</Y></Location><BoxSize><Width>138</Width><Height>33</Height></BoxSize></Comment>
+<Label>texto_Conexao.Text</Label>
+<BeforeBlockId>1484</BeforeBlockId>
+<AfterBlockId>2244</AfterBlockId>
+<Sockets num-sockets="1" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="to" position-type="single" con-block-id="867" ></BlockConnector>
+</Sockets>
+</Block>
+</BlockStub>
+<BlockStub><StubParentName>texto_Controle.Text</StubParentName><StubParentGenus>read-write-property</StubParentGenus><Block id="2244" genus-name="componentSetter" >
+<Location><X>331</X><Y>718</Y></Location>
+<Comment>
+<Text>Texto sobre controle.</Text><Location><X>148</X><Y>728</Y></Location><BoxSize><Width>133</Width><Height>32</Height></BoxSize></Comment>
+<Label>texto_Controle.Text</Label>
+<BeforeBlockId>2242</BeforeBlockId>
+<AfterBlockId>1406</AfterBlockId>
+<Sockets num-sockets="1" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="to" position-type="single" con-block-id="1126" ></BlockConnector>
+</Sockets>
+</Block>
+</BlockStub>
+<BlockStub><StubParentName>texto_Botoes_Controle</StubParentName><StubParentGenus>define-void</StubParentGenus><Block id="1406" genus-name="caller-command" >
+<Location><X>331</X><Y>812</Y></Location>
+<Comment>
+<Text>Chama os outros procedimentos para exibi\u00e7\u00e3o dos textos.</Text><Location><X>115</X><Y>815</Y></Location><BoxSize><Width>186</Width><Height>45</Height></BoxSize></Comment>
+<Label>texto_Botoes_Controle</Label>
+<BeforeBlockId>2244</BeforeBlockId>
+<AfterBlockId>2399</AfterBlockId>
+</Block>
+</BlockStub>
+<Block id="1126" genus-name="string-vappend" >
+<Location><X>517</X><Y>721</Y></Location>
+<Label>make text</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="2244" ></BlockConnector></Plug>
+<Sockets num-sockets="3" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="text" is-expandable="yes" position-type="single" con-block-id="1128" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="text" is-expandable="yes" position-type="single" con-block-id="1130" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="text" is-expandable="yes" position-type="single" ></BlockConnector>
+</Sockets>
+</Block>
+<Block id="1130" genus-name="text" >
+<Location><X>655</X><Y>749</Y></Location>
+<Label> Os comandos s\u00e3o mostrados abaixo:</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="1126" ></BlockConnector></Plug>
+</Block>
+<Block id="1128" genus-name="text" >
+<Location><X>655</X><Y>721</Y></Location>
+<Label>Ap\u00f3s a conex\u00e3o, \u00e9 ent\u00e3o poss\u00edvel controlar o carro. Para isso poder\u00e1 ser utilizado os bot\u00f5es direcionais, ou comandos de voz.</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="1126" ></BlockConnector></Plug>
+</Block>
+<Block id="867" genus-name="string-vappend" >
+<Location><X>519</X><Y>599</Y></Location>
+<Label>make text</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="2242" ></BlockConnector></Plug>
+<Sockets num-sockets="4" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="text" is-expandable="yes" position-type="single" con-block-id="873" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="text" is-expandable="yes" position-type="single" con-block-id="875" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="text" is-expandable="yes" position-type="single" con-block-id="877" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="text" is-expandable="yes" position-type="single" ></BlockConnector>
+</Sockets>
+</Block>
+<Block id="877" genus-name="text" >
+<Location><X>657</X><Y>655</Y></Location>
+<Label> Caso deseje desconectar do dispositivo, basta pressionar o bot\u00e3o de On\/Off ou o bot\u00e3o de reconhecimento de voz e dizer \"Desconectar\".</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="867" ></BlockConnector></Plug>
+</Block>
+<Block id="875" genus-name="text" >
+<Location><X>657</X><Y>627</Y></Location>
+<Label> Para isso, basta pressionar o bot\u00e3o de reconhecimento de voz e dizer \"Conectar\", ou pressionar o bot\u00e3o de On\/Off, ou ent\u00e3o qualquer bot\u00e3o de controle.\\n</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="867" ></BlockConnector></Plug>
+</Block>
+<Block id="873" genus-name="text" >
+<Location><X>657</X><Y>599</Y></Location>
+<Label>Ao iniciar o aplicativo, deve-se conectar ao dispositivo que deseja controlar. </Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="867" ></BlockConnector></Plug>
+</Block>
+<Block id="1326" genus-name="define-void" >
+<Location><X>299</X><Y>45</Y></Location>
+<Comment>
+<Text>Texto dos bot\u00f5es direcionais.</Text><Location><X>490</X><Y>6</Y></Location><BoxSize><Width>169</Width><Height>28</Height></BoxSize></Comment>
+<Label>texto_Botoes_Controle</Label>
+<Sockets num-sockets="2" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="arg" is-expandable="yes" position-type="single" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="cmd" init-type="cmd" label="do" is-indented="yes" position-type="single" con-block-id="1332" ></BlockConnector>
+</Sockets>
+</Block>
+<BlockStub><StubParentName>label_Esq.Text</StubParentName><StubParentGenus>read-write-property</StubParentGenus><Block id="1332" genus-name="componentSetter" >
+<Location><X>331</X><Y>74</Y></Location>
+<Comment>
+<Text>Seta esquerda.</Text><Location><X>501</X><Y>86</Y></Location><BoxSize><Width>105</Width><Height>32</Height></BoxSize></Comment>
+<Label>label_Esq.Text</Label>
+<BeforeBlockId>1326</BeforeBlockId>
+<AfterBlockId>1590</AfterBlockId>
+<Sockets num-sockets="1" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="to" position-type="single" con-block-id="1480" ></BlockConnector>
+</Sockets>
+</Block>
+</BlockStub>
+<BlockStub><StubParentName>label_Dir.Text</StubParentName><StubParentGenus>read-write-property</StubParentGenus><Block id="1590" genus-name="componentSetter" >
+<Location><X>331</X><Y>168</Y></Location>
+<Comment>
+<Text>Seta direita.</Text><Location><X>496</X><Y>183</Y></Location><BoxSize><Width>81</Width><Height>33</Height></BoxSize></Comment>
+<Label>label_Dir.Text</Label>
+<BeforeBlockId>1332</BeforeBlockId>
+<AfterBlockId>1796</AfterBlockId>
+<Sockets num-sockets="1" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="to" position-type="single" con-block-id="1592" ></BlockConnector>
+</Sockets>
+</Block>
+</BlockStub>
+<BlockStub><StubParentName>label_Frente.Text</StubParentName><StubParentGenus>read-write-property</StubParentGenus><Block id="1796" genus-name="componentSetter" >
+<Location><X>331</X><Y>262</Y></Location>
+<Comment>
+<Text>Seta para frente.</Text><Location><X>515</X><Y>278</Y></Location><BoxSize><Width>108</Width><Height>31</Height></BoxSize></Comment>
+<Label>label_Frente.Text</Label>
+<BeforeBlockId>1590</BeforeBlockId>
+<AfterBlockId>2004</AfterBlockId>
+<Sockets num-sockets="1" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="to" position-type="single" con-block-id="1798" ></BlockConnector>
+</Sockets>
+</Block>
+</BlockStub>
+<BlockStub><StubParentName>label_Tras.Text</StubParentName><StubParentGenus>read-write-property</StubParentGenus><Block id="2004" genus-name="componentSetter" >
+<Location><X>331</X><Y>384</Y></Location>
+<Comment>
+<Text>Seta para tr\u00e1s.</Text><Location><X>506</X><Y>432</Y></Location><BoxSize><Width>97</Width><Height>31</Height></BoxSize></Comment>
+<Label>label_Tras.Text</Label>
+<BeforeBlockId>1796</BeforeBlockId>
+<Sockets num-sockets="1" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="to" position-type="single" con-block-id="2008" ></BlockConnector>
+</Sockets>
+</Block>
+</BlockStub>
+<Block id="2008" genus-name="string-vappend" >
+<Location><X>493</X><Y>387</Y></Location>
+<Label>make text</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="2004" ></BlockConnector></Plug>
+<Sockets num-sockets="4" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="text" is-expandable="yes" position-type="single" con-block-id="2012" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="text" is-expandable="yes" position-type="single" con-block-id="2016" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="text" is-expandable="yes" position-type="single" con-block-id="2020" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="text" is-expandable="yes" position-type="single" ></BlockConnector>
+</Sockets>
+</Block>
+<Block id="2020" genus-name="text" >
+<Location><X>631</X><Y>443</Y></Location>
+<Label>Caso o carro esteja se movendo para frente, pressionar esse bot\u00e3o far\u00e1 com que sua velocidade de movimento para frente diminua, at\u00e9 que ent\u00e3o pare e comece a andar para tr\u00e1s.</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="2008" ></BlockConnector></Plug>
+</Block>
+<Block id="2016" genus-name="text" >
+<Location><X>631</X><Y>415</Y></Location>
+<Label> proporcionalmente. Existem 9 velocidades diferentes. Essa mesma fun\u00e7\u00e3o pode ser executada pelo comando de voz \"Afastar\".\\n</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="2008" ></BlockConnector></Plug>
+</Block>
+<Block id="2012" genus-name="text" >
+<Location><X>631</X><Y>387</Y></Location>
+<Label>Para mover o carro para tr\u00e1s, pressione e solte o bot\u00e3o. A cada vez que o bot\u00e3o \u00e9 pressionado, a velocidade do carro aumenta</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="2008" ></BlockConnector></Plug>
+</Block>
+<Block id="1798" genus-name="string-vappend" >
+<Location><X>503</X><Y>265</Y></Location>
+<Label>make text</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="1796" ></BlockConnector></Plug>
+<Sockets num-sockets="4" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="text" is-expandable="yes" position-type="single" con-block-id="1800" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="text" is-expandable="yes" position-type="single" con-block-id="1802" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="text" is-expandable="yes" position-type="single" con-block-id="1804" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="text" is-expandable="yes" position-type="single" ></BlockConnector>
+</Sockets>
+</Block>
+<Block id="1800" genus-name="text" >
+<Location><X>641</X><Y>265</Y></Location>
+<Label>Para mover o carro para frente, pressione e solte o bot\u00e3o. A cada vez que o bot\u00e3o \u00e9 pressionado, a velocidade do carro aumenta</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="1798" ></BlockConnector></Plug>
+</Block>
+<Block id="1592" genus-name="string-vappend" >
+<Location><X>483</X><Y>171</Y></Location>
+<Label>make text</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="1590" ></BlockConnector></Plug>
+<Sockets num-sockets="3" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="text" is-expandable="yes" position-type="single" con-block-id="1594" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="text" is-expandable="yes" position-type="single" con-block-id="1596" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="text" is-expandable="yes" position-type="single" ></BlockConnector>
+</Sockets>
+</Block>
+<Block id="1596" genus-name="text" >
+<Location><X>621</X><Y>199</Y></Location>
+<Label>Esse comando, tamb\u00e9m pode ser executado, pelo comando de voz \"Direita\".</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="1592" ></BlockConnector></Plug>
+</Block>
+<Block id="1594" genus-name="text" >
+<Location><X>621</X><Y>171</Y></Location>
+<Label>Para virar a direita, pressione o bot\u00e3o uma vez. Caso tenha virado anteriormente para algum lado, esse bot\u00e3o far\u00e1 com que o carro pare.\\n</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="1592" ></BlockConnector></Plug>
+</Block>
+<Block id="1480" genus-name="string-vappend" >
+<Location><X>489</X><Y>77</Y></Location>
+<Label>make text</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="1332" ></BlockConnector></Plug>
+<Sockets num-sockets="3" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="text" is-expandable="yes" position-type="single" con-block-id="1334" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="text" is-expandable="yes" position-type="single" con-block-id="1482" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="text" is-expandable="yes" position-type="single" ></BlockConnector>
+</Sockets>
+</Block>
+<Block id="1482" genus-name="text" >
+<Location><X>627</X><Y>105</Y></Location>
+<Label>Esse comando, tamb\u00e9m pode ser executado, pelo comando de voz \"Esquerda\".</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="1480" ></BlockConnector></Plug>
+</Block>
+<Block id="1334" genus-name="text" >
+<Location><X>627</X><Y>77</Y></Location>
+<Label>Para virar a esquerda, pressione o bot\u00e3o uma vez. Caso tenha virado anteriormente para algum lado, esse bot\u00e3o far\u00e1 com que o carro pare.\\n</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="1480" ></BlockConnector></Plug>
+</Block>
+<BlockStub><StubParentName>cria_Cabecalhos</StubParentName><StubParentGenus>define-void</StubParentGenus><Block id="1496" genus-name="caller-command" >
+<Location><X>59</X><Y>84</Y></Location>
+<Label>cria_Cabecalhos</Label>
+<BeforeBlockId>855</BeforeBlockId>
+</Block>
+</BlockStub>
+<Block id="855" genus-name="Screen-Initialize" >
+<Location><X>31</X><Y>51</Y></Location>
+<Comment>
+<Text>Ao inicializar a tela de ajuda, cahama o procedimento que cria os textos de cabe\u00e7alho.</Text><Location><X>206</X><Y>2</Y></Location><BoxSize><Width>212</Width><Height>60</Height></BoxSize></Comment>
+<Label>ajuda.Initialize</Label>
+<Sockets num-sockets="1" >
+<BlockConnector connector-kind="socket" connector-type="cmd" init-type="cmd" label="do" is-indented="yes" position-type="single" con-block-id="1496" ></BlockConnector>
+</Sockets>
+</Block>
+<Block id="2053" genus-name="Screen-BackPressed" >
+<Location><X>27</X><Y>332</Y></Location>
+<Comment>
+<Text>Fun\u00e7\u00e3o executada ao tocar no bot\u00e3o de voltar do android.</Text><Location><X>252</X><Y>283</Y></Location><BoxSize><Width>173</Width><Height>44</Height></BoxSize></Comment>
+<Label>ajuda.BackPressed</Label>
+<Sockets num-sockets="1" >
+<BlockConnector connector-kind="socket" connector-type="cmd" init-type="cmd" label="do" is-indented="yes" position-type="single" con-block-id="2057" ></BlockConnector>
+</Sockets>
+</Block>
+<BlockStub><StubParentName>texto_Botoes_Cabecalho</StubParentName><StubParentGenus>define-void</StubParentGenus><Block id="3538" genus-name="caller-command" >
+<Location><X>331</X><Y>896</Y></Location>
+<Label>texto_Botoes_Cabecalho</Label>
+<BeforeBlockId>3457</BeforeBlockId>
+</Block>
+</BlockStub>
+<Block id="5196" genus-name="define-void" >
+<Location><X>300</X><Y>971</Y></Location>
+<Comment>
+<Text>Fun\u00e7\u00e3o que faz o dispositivo vibrar por 100ms.</Text><Location><X>108</X><Y>926</Y></Location><BoxSize><Width>163</Width><Height>42</Height></BoxSize></Comment>
+<Label>vibrar</Label>
+<Sockets num-sockets="2" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="arg" is-expandable="yes" position-type="single" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="cmd" init-type="cmd" label="do" is-indented="yes" position-type="single" con-block-id="5263" ></BlockConnector>
+</Sockets>
+</Block>
+<Block id="4679" genus-name="close-screen" >
+<Location><X>58</X><Y>255</Y></Location>
+<Comment>
+<Text>Fecha a tela.</Text><Location><X>207</X><Y>255</Y></Location><BoxSize><Width>88</Width><Height>33</Height></BoxSize></Comment>
+<Label>close screen</Label>
+<BeforeBlockId>5206</BeforeBlockId>
+</Block>
+<BlockStub><StubParentName>vibrar</StubParentName><StubParentGenus>define-void</StubParentGenus><Block id="5206" genus-name="caller-command" >
+<Location><X>58</X><Y>227</Y></Location>
+<Comment>
+<Text>Chama a fun\u00e7\u00e3o que vibra o dispositivo.</Text><Location><X>203</X><Y>212</Y></Location><BoxSize><Width>217</Width><Height>30</Height></BoxSize></Comment>
+<Label>vibrar</Label>
+<BeforeBlockId>1490</BeforeBlockId>
+<AfterBlockId>4679</AfterBlockId>
+</Block>
+</BlockStub>
+<Block id="1490" genus-name="Button-Click" >
+<Location><X>30</X><Y>194</Y></Location>
+<Comment>
+<Text>A\u00e7\u00e3o executada pelo bot\u00e3o de voltar.</Text><Location><X>128</X><Y>143</Y></Location><BoxSize><Width>216</Width><Height>31</Height></BoxSize></Comment>
+<Label>btn_Voltar.Click</Label>
+<Sockets num-sockets="1" >
+<BlockConnector connector-kind="socket" connector-type="cmd" init-type="cmd" label="do" is-indented="yes" position-type="single" con-block-id="5206" ></BlockConnector>
+</Sockets>
+</Block>
+</PageBlocks>
+</Page>
+
+</Pages><YoungAndroidMaps><YoungAndroidUuidMap>
+<YoungAndroidUuidEntry uuid="-1449856913" component-id="img_Tras" component-genus="Image" component-version="1" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="-793893612" component-id="esp_10" component-genus="HorizontalArrangement" component-version="2" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="865042735" component-id="img_Voz" component-genus="Image" component-version="1" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="-1982056624" component-id="esp_8" component-genus="HorizontalArrangement" component-version="2" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="-1873229203" component-id="label_QuemE" component-genus="Label" component-version="2" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="1558364199" component-id="label_Btn_Cabecalho" component-genus="Label" component-version="2" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="-1958259488" component-id="btn_Monitoramento" component-genus="Image" component-version="1" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="-1936377408" component-id="esp_2" component-genus="HorizontalArrangement" component-version="2" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="-2127371600" component-id="esp_18" component-genus="HorizontalArrangement" component-version="2" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="773791775" component-id="HorizontalArrangement14" component-genus="HorizontalArrangement" component-version="2" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="-65610075" component-id="btn_Voltar" component-genus="Button" component-version="5" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="-721764560" component-id="img_Frente" component-genus="Image" component-version="1" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="-225306478" component-id="HorizontalArrangement12" component-genus="HorizontalArrangement" component-version="2" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="-1779226542" component-id="esp_30" component-genus="HorizontalArrangement" component-version="2" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="-1564078873" component-id="img_Fechar" component-genus="Image" component-version="1" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="711152621" component-id="HorizontalArrangement2" component-genus="HorizontalArrangement" component-version="2" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="-1279074752" component-id="img_OnOff" component-genus="Image" component-version="1" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="-464260031" component-id="esp_15" component-genus="HorizontalArrangement" component-version="2" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="1827439388" component-id="HorizontalArrangement1" component-genus="HorizontalArrangement" component-version="2" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="49688898" component-id="img_Sobre" component-genus="Image" component-version="1" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="1323219437" component-id="esp_1" component-genus="HorizontalArrangement" component-version="2" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="0" component-id="ajuda" component-genus="Form" component-version="0" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="432518171" component-id="label_Dir" component-genus="Label" component-version="2" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="-897629911" component-id="label_OnOff" component-genus="Label" component-version="2" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="1309750823" component-id="esp_35" component-genus="HorizontalArrangement" component-version="2" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="173629582" component-id="esp_12" component-genus="HorizontalArrangement" component-version="2" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="1126789099" component-id="esp_6" component-genus="HorizontalArrangement" component-version="2" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="421239306" component-id="esp_33" component-genus="HorizontalArrangement" component-version="2" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="-759930015" component-id="esp_38" component-genus="HorizontalArrangement" component-version="2" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="627209643" component-id="HorizontalArrangement6" component-genus="HorizontalArrangement" component-version="2" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="1032295240" component-id="esp_4" component-genus="HorizontalArrangement" component-version="2" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="1938734580" component-id="texto_Conexao" component-genus="Label" component-version="2" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="840996706" component-id="HorizontalArrangement4" component-genus="HorizontalArrangement" component-version="2" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="527666787" component-id="HorizontalArrangement16" component-genus="HorizontalArrangement" component-version="2" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="-824727735" component-id="esp_31" component-genus="HorizontalArrangement" component-version="2" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="9086224" component-id="esp_3" component-genus="HorizontalArrangement" component-version="2" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="-1051387154" component-id="esp_20" component-genus="HorizontalArrangement" component-version="2" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="-1841198501" component-id="label_Controle" component-genus="Label" component-version="2" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="-946550002" component-id="label_Exib_Dist" component-genus="Label" component-version="2" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="461163103" component-id="esp_46" component-genus="HorizontalArrangement" component-version="2" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="1245558131" component-id="HorizontalArrangement15" component-genus="HorizontalArrangement" component-version="2" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="-711555647" component-id="img_Tras_Rapido" component-genus="Image" component-version="1" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="1169029698" component-id="esp_25" component-genus="HorizontalArrangement" component-version="2" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="-818837318" component-id="esp_29" component-genus="HorizontalArrangement" component-version="2" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="685510546" component-id="esp_19" component-genus="HorizontalArrangement" component-version="2" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="-741238349" component-id="texto_Distancia" component-genus="Label" component-version="2" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="520246429" component-id="esp_7" component-genus="HorizontalArrangement" component-version="2" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="1812046992" component-id="label_Ajuda" component-genus="Label" component-version="2" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="-1874413635" component-id="label_Tras" component-genus="Label" component-version="2" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="829194252" component-id="label_Voz" component-genus="Label" component-version="2" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="-1591361202" component-id="esp_41" component-genus="HorizontalArrangement" component-version="2" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="-1889162597" component-id="esp_23" component-genus="HorizontalArrangement" component-version="2" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="-397910185" component-id="label_Sobre" component-genus="Label" component-version="2" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="40945372" component-id="texto_Comando_Voz" component-genus="Label" component-version="2" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="-462329339" component-id="HorizontalArrangement5" component-genus="HorizontalArrangement" component-version="2" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="-1601388502" component-id="img_Esq" component-genus="Image" component-version="1" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="529842697" component-id="esp_37" component-genus="HorizontalArrangement" component-version="2" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="-1411782628" component-id="esp_43" component-genus="HorizontalArrangement" component-version="2" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="-850148336" component-id="img_Dir" component-genus="Image" component-version="1" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="328828676" component-id="esp_27" component-genus="HorizontalArrangement" component-version="2" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="644501270" component-id="esp_48" component-genus="HorizontalArrangement" component-version="2" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="2145385992" component-id="esp_32" component-genus="HorizontalArrangement" component-version="2" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="-154136882" component-id="esp_17" component-genus="HorizontalArrangement" component-version="2" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="-1428383533" component-id="HorizontalArrangement18" component-genus="HorizontalArrangement" component-version="2" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="920657111" component-id="img_Ajuda" component-genus="Image" component-version="1" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="1136938766" component-id="arrang_Principal" component-genus="VerticalArrangement" component-version="2" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="1081541520" component-id="HorizontalArrangement10" component-genus="HorizontalArrangement" component-version="2" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="-669443534" component-id="img_Frente_Rapido" component-genus="Image" component-version="1" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="1954218188" component-id="esp_40" component-genus="HorizontalArrangement" component-version="2" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="394613403" component-id="esp_13" component-genus="HorizontalArrangement" component-version="2" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="-2097224074" component-id="esp_50" component-genus="HorizontalArrangement" component-version="2" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="780500457" component-id="HorizontalArrangement7" component-genus="HorizontalArrangement" component-version="2" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="-1821763856" component-id="label_Frente_Rapido" component-genus="Label" component-version="2" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="2123446467" component-id="esp_24" component-genus="HorizontalArrangement" component-version="2" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="-1091427697" component-id="arrang_Rodape" component-genus="HorizontalArrangement" component-version="2" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="-656534771" component-id="esp_11" component-genus="HorizontalArrangement" component-version="2" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="652013208" component-id="label_Fechar" component-genus="Label" component-version="2" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="-1797252979" component-id="label_Voz_Parar" component-genus="Label" component-version="2" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="1364826898" component-id="esp_45" component-genus="HorizontalArrangement" component-version="2" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="-143646830" component-id="HorizontalArrangement13" component-genus="HorizontalArrangement" component-version="2" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="511303056" component-id="esp_44" component-genus="HorizontalArrangement" component-version="2" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="927383508" component-id="esp_49" component-genus="HorizontalArrangement" component-version="2" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="-1954839232" component-id="label_Conexao" component-genus="Label" component-version="2" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="-877123681" component-id="esp_14" component-genus="HorizontalArrangement" component-version="2" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="679577163" component-id="esp_5" component-genus="HorizontalArrangement" component-version="2" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="1706012258" component-id="HorizontalArrangement3" component-genus="HorizontalArrangement" component-version="2" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="-661394926" component-id="img_Voz_Parar" component-genus="Image" component-version="1" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="-1328395629" component-id="esp_22" component-genus="HorizontalArrangement" component-version="2" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="-1021143265" component-id="esp_34" component-genus="HorizontalArrangement" component-version="2" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="-741763925" component-id="label_Controles_Especiais" component-genus="Label" component-version="2" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="1474416385" component-id="esp_42" component-genus="HorizontalArrangement" component-version="2" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="-278623990" component-id="esp_28" component-genus="HorizontalArrangement" component-version="2" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="-849325779" component-id="label_Tras_Rapido" component-genus="Label" component-version="2" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="-1087107861" component-id="arrang_btn_Frente" component-genus="HorizontalArrangement" component-version="2" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="1820966483" component-id="esp_26" component-genus="HorizontalArrangement" component-version="2" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="420820019" component-id="texto_QuemE" component-genus="Label" component-version="2" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="-1768034701" component-id="HorizontalArrangement17" component-genus="HorizontalArrangement" component-version="2" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="-349673522" component-id="esp_39" component-genus="HorizontalArrangement" component-version="2" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="-1282448827" component-id="label_Esq" component-genus="Label" component-version="2" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="395512314" component-id="arrang_btn_Dir" component-genus="HorizontalArrangement" component-version="2" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="926412231" component-id="player" component-genus="Player" component-version="4" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="820942301" component-id="esp_21" component-genus="HorizontalArrangement" component-version="2" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="-2024008352" component-id="label_Frente" component-genus="Label" component-version="2" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="991649486" component-id="arrang_btn_Esq" component-genus="HorizontalArrangement" component-version="2" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="-997588148" component-id="esp_9" component-genus="HorizontalArrangement" component-version="2" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="1352697149" component-id="HorizontalArrangement9" component-genus="HorizontalArrangement" component-version="2" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="-1620408202" component-id="HorizontalArrangement8" component-genus="HorizontalArrangement" component-version="2" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="-23147128" component-id="esp_36" component-genus="HorizontalArrangement" component-version="2" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="833329962" component-id="HorizontalArrangement11" component-genus="HorizontalArrangement" component-version="2" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="-1073872579" component-id="esp_16" component-genus="HorizontalArrangement" component-version="2" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="1263154898" component-id="texto_Controle" component-genus="Label" component-version="2" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="1317182256" component-id="esp_47" component-genus="HorizontalArrangement" component-version="2" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="-404321097" component-id="label_Distancia" component-genus="Label" component-version="2" ></YoungAndroidUuidEntry>
+</YoungAndroidUuidMap>
+</YoungAndroidMaps>
+</YACodeBlocks>

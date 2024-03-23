@@ -1,0 +1,1589 @@
+<!DOCTYPE YACodeBlocks SYSTEM "support/save_format.dtd">
+<YACodeBlocks ya-version="75" lang-version="17">
+<Pages><Page page-name=" " page-color="237 245 211" page-width="2507" page-height="1815" page-drawer="My Definitions" >
+<PageBlocks>
+<Block id="2143" genus-name="Button-Click" >
+<Location><X>417</X><Y>720</Y></Location>
+<Comment>
+<Text>A\u00e7\u00e3o executada quando o bot\u00e3o voltar da tela \u00e9 tocado.</Text><Location><X>195</X><Y>704</Y></Location><BoxSize><Width>193</Width><Height>46</Height></BoxSize></Comment>
+<Label>btn_Voltar.Click</Label>
+<Sockets num-sockets="1" >
+<BlockConnector connector-kind="socket" connector-type="cmd" init-type="cmd" label="do" is-indented="yes" position-type="single" con-block-id="2069" ></BlockConnector>
+</Sockets>
+</Block>
+<BlockStub><StubParentName>vibrar</StubParentName><StubParentGenus>define-void</StubParentGenus><Block id="2069" genus-name="caller-command" >
+<Location><X>445</X><Y>753</Y></Location>
+<Label>vibrar</Label>
+<BeforeBlockId>2143</BeforeBlockId>
+<AfterBlockId>2159</AfterBlockId>
+</Block>
+</BlockStub>
+<BlockStub><StubParentName>fechar</StubParentName><StubParentGenus>define-void</StubParentGenus><Block id="2159" genus-name="caller-command" >
+<Location><X>445</X><Y>781</Y></Location>
+<Comment>
+<Text>Chama o procedimento que fechar\u00e1 o app.</Text><Location><X>207</X><Y>774</Y></Location><BoxSize><Width>202</Width><Height>47</Height></BoxSize></Comment>
+<Label>fechar</Label>
+<BeforeBlockId>2069</BeforeBlockId>
+</Block>
+</BlockStub>
+<Block id="2125" genus-name="Button-Click" >
+<Location><X>420</X><Y>582</Y></Location>
+<Comment>
+<Text>A\u00e7\u00e3o executada quando o bot\u00e3o de reconhecimento de voz \u00e9 tocado.</Text><Location><X>165</X><Y>554</Y></Location><BoxSize><Width>209</Width><Height>48</Height></BoxSize></Comment>
+<Label>btn_Voz.Click</Label>
+<Sockets num-sockets="1" >
+<BlockConnector connector-kind="socket" connector-type="cmd" init-type="cmd" label="do" is-indented="yes" position-type="single" con-block-id="2067" ></BlockConnector>
+</Sockets>
+</Block>
+<BlockStub><StubParentName>vibrar</StubParentName><StubParentGenus>define-void</StubParentGenus><Block id="2067" genus-name="caller-command" >
+<Location><X>448</X><Y>615</Y></Location>
+<Comment>
+<Text>Executa a fun\u00e7\u00e3o de vibrar.</Text><Location><X>234</X><Y>604</Y></Location><BoxSize><Width>162</Width><Height>29</Height></BoxSize></Comment>
+<Label>vibrar</Label>
+<BeforeBlockId>2125</BeforeBlockId>
+<AfterBlockId>2129</AfterBlockId>
+</Block>
+</BlockStub>
+<Block id="2129" genus-name="SpeechRecognizer-GetText" >
+<Location><X>448</X><Y>643</Y></Location>
+<Comment>
+<Text>Executa a fun\u00e7\u00e3o de reconhecimento de voz.</Text><Location><X>222</X><Y>633</Y></Location><BoxSize><Width>164</Width><Height>40</Height></BoxSize></Comment>
+<Label>reconhecedor_Voz.GetText</Label>
+<BeforeBlockId>2067</BeforeBlockId>
+</Block>
+<Block id="1820" genus-name="def" >
+<Location><X>32</X><Y>365</Y></Location>
+<Comment>
+<Text>Vari\u00e1vel que armazenar\u00e1 o texto da segunda tela de informa\u00e7\u00f5es \"Sobre\".</Text><Location><X>69</X><Y>437</Y></Location><BoxSize><Width>195</Width><Height>57</Height></BoxSize></Comment>
+<Label>sobre_Int</Label>
+<Sockets num-sockets="1" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="as" position-type="single" con-block-id="1832" ></BlockConnector>
+</Sockets>
+</Block>
+<Block id="1832" genus-name="text" >
+<Location><X>176</X><Y>365</Y></Location>
+<Label></Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="1820" ></BlockConnector></Plug>
+</Block>
+<Block id="1876" genus-name="Button-Click" >
+<Location><X>417</X><Y>1071</Y></Location>
+<Comment>
+<Text>A\u00e7\u00e3o executada quando o bot\u00e3o de ajuda \u00e9 tocado.</Text><Location><X>212</X><Y>1047</Y></Location><BoxSize><Width>200</Width><Height>44</Height></BoxSize></Comment>
+<Label>btn_Ajuda.Click</Label>
+<Sockets num-sockets="1" >
+<BlockConnector connector-kind="socket" connector-type="cmd" init-type="cmd" label="do" is-indented="yes" position-type="single" con-block-id="2073" ></BlockConnector>
+</Sockets>
+</Block>
+<BlockStub><StubParentName>vibrar</StubParentName><StubParentGenus>define-void</StubParentGenus><Block id="2073" genus-name="caller-command" >
+<Location><X>445</X><Y>1104</Y></Location>
+<Label>vibrar</Label>
+<BeforeBlockId>1876</BeforeBlockId>
+<AfterBlockId>1880</AfterBlockId>
+</Block>
+</BlockStub>
+<Block id="1880" genus-name="open-another-screen" >
+<Location><X>445</X><Y>1132</Y></Location>
+<Comment>
+<Text>Abre a tela de \"ajuda\"</Text><Location><X>280</X><Y>1122</Y></Location><BoxSize><Width>148</Width><Height>29</Height></BoxSize></Comment>
+<Label>open another screen</Label>
+<BeforeBlockId>2073</BeforeBlockId>
+<Sockets num-sockets="1" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="screenName" position-type="single" con-block-id="1882" ></BlockConnector>
+</Sockets>
+</Block>
+<Block id="1882" genus-name="text" >
+<Location><X>695</X><Y>1135</Y></Location>
+<Label>ajuda_Monitoramento</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="1880" ></BlockConnector></Plug>
+</Block>
+<Block id="2299" genus-name="Clock-Timer" >
+<Location><X>415</X><Y>1203</Y></Location>
+<Comment>
+<Text>Procedimento que representa a fun\u00e7\u00e3o Sleep. Ela recebe um valor de tempo, a cada ciclo do componente clock, esse valor \u00e9 atualizado, se ele for igual a 0, executa determinada a\u00e7\u00e3o.</Text><Location><X>127</X><Y>1195</Y></Location><BoxSize><Width>249</Width><Height>70</Height></BoxSize></Comment>
+<Label>clock_Conexao.Timer</Label>
+<Sockets num-sockets="1" >
+<BlockConnector connector-kind="socket" connector-type="cmd" init-type="cmd" label="do" is-indented="yes" position-type="single" con-block-id="2303" ></BlockConnector>
+</Sockets>
+</Block>
+<Block id="2303" genus-name="ifelse" >
+<Location><X>443</X><Y>1236</Y></Location>
+<Label>ifelse</Label>
+<BeforeBlockId>2299</BeforeBlockId>
+<Sockets num-sockets="3" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="test" position-type="single" con-block-id="2305" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="cmd" init-type="cmd" label="then-do" is-indented="yes" position-type="single" con-block-id="2311" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="cmd" init-type="cmd" label="else-do" is-indented="yes" position-type="single" con-block-id="2319" ></BlockConnector>
+</Sockets>
+</Block>
+<BlockStub><StubParentName>clock_Conexao.TimerEnabled</StubParentName><StubParentGenus>read-write-property</StubParentGenus><Block id="2319" genus-name="componentSetter" >
+<Location><X>494</X><Y>1337</Y></Location>
+<Comment>
+<Text>Desabilita a fun\u00e7\u00e3o Sleep.</Text><Location><X>247</X><Y>1336</Y></Location><BoxSize><Width>152</Width><Height>28</Height></BoxSize></Comment>
+<Label>clock_Conexao.TimerEnabled</Label>
+<BeforeBlockId>2303</BeforeBlockId>
+<AfterBlockId>2323</AfterBlockId>
+<Sockets num-sockets="1" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="to" position-type="single" con-block-id="2321" ></BlockConnector>
+</Sockets>
+</Block>
+</BlockStub>
+<Block id="2323" genus-name="close-screen-with-value" >
+<Location><X>494</X><Y>1375</Y></Location>
+<Comment>
+<Text>Fecha essa tela, e passo valor da vari\u00e1vel endere\u00e7o para a tela pai.</Text><Location><X>248</X><Y>1345</Y></Location><BoxSize><Width>191</Width><Height>44</Height></BoxSize></Comment>
+<Label>close screen with value</Label>
+<BeforeBlockId>2319</BeforeBlockId>
+<Sockets num-sockets="1" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="result" position-type="single" con-block-id="2325" ></BlockConnector>
+</Sockets>
+</Block>
+<BlockStub><StubParentName>endereco</StubParentName><StubParentGenus>def</StubParentGenus><Block id="2325" genus-name="getterGlobal" >
+<Location><X>726</X><Y>1378</Y></Location>
+<Label>endereco</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="2323" ></BlockConnector></Plug>
+</Block>
+</BlockStub>
+<Block id="2321" genus-name="false" >
+<Location><X>738</X><Y>1340</Y></Location>
+<Label>false</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="2319" ></BlockConnector></Plug>
+</Block>
+<BlockStub><StubParentName>tempo_Desconectar</StubParentName><StubParentGenus>def</StubParentGenus><Block id="2311" genus-name="setterGlobal" >
+<Location><X>495</X><Y>1280</Y></Location>
+<Label>tempo_Desconectar</Label>
+<BeforeBlockId>2303</BeforeBlockId>
+<Sockets num-sockets="1" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="to" position-type="single" con-block-id="2313" ></BlockConnector>
+</Sockets>
+</Block>
+</BlockStub>
+<Block id="2313" genus-name="number-minus" >
+<Location><X>705</X><Y>1283</Y></Location>
+<Label>\u2212</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="2311" ></BlockConnector></Plug>
+<Sockets num-sockets="2" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="" position-type="bottom" con-block-id="2315" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="" position-type="bottom" con-block-id="2317" ></BlockConnector>
+</Sockets>
+</Block>
+<BlockStub><StubParentName>clock_Conexao.TimerInterval</StubParentName><StubParentGenus>read-write-property</StubParentGenus><Block id="2317" genus-name="componentGetter" >
+<Location><X>940</X><Y>1290</Y></Location>
+<Label>clock_Conexao.TimerInterval</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="2313" ></BlockConnector></Plug>
+</Block>
+</BlockStub>
+<BlockStub><StubParentName>tempo_Desconectar</StubParentName><StubParentGenus>def</StubParentGenus><Block id="2315" genus-name="getterGlobal" >
+<Location><X>715</X><Y>1290</Y></Location>
+<Label>tempo_Desconectar</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="2313" ></BlockConnector></Plug>
+</Block>
+</BlockStub>
+<Block id="2305" genus-name="greaterthan" >
+<Location><X>541</X><Y>1239</Y></Location>
+<Label>&gt;</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="2303" ></BlockConnector></Plug>
+<Sockets num-sockets="2" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="" position-type="bottom" con-block-id="2307" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="" position-type="bottom" con-block-id="2309" ></BlockConnector>
+</Sockets>
+</Block>
+<Block id="2309" genus-name="number" >
+<Location><X>776</X><Y>1246</Y></Location>
+<Label>0</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="2305" ></BlockConnector></Plug>
+</Block>
+<BlockStub><StubParentName>tempo_Desconectar</StubParentName><StubParentGenus>def</StubParentGenus><Block id="2307" genus-name="getterGlobal" >
+<Location><X>551</X><Y>1246</Y></Location>
+<Label>tempo_Desconectar</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="2305" ></BlockConnector></Plug>
+</Block>
+</BlockStub>
+<Block id="1887" genus-name="Button-Click" >
+<Location><X>418</X><Y>949</Y></Location>
+<Comment>
+<Text>A\u00e7\u00e3o executada quando o bot\u00e3o de informa\u00e7\u00f5es \"Sobre\" \u00e9 tocado.</Text><Location><X>219</X><Y>948</Y></Location><BoxSize><Width>191</Width><Height>46</Height></BoxSize></Comment>
+<Label>btn_Sobre.Click</Label>
+<Sockets num-sockets="1" >
+<BlockConnector connector-kind="socket" connector-type="cmd" init-type="cmd" label="do" is-indented="yes" position-type="single" con-block-id="2071" ></BlockConnector>
+</Sockets>
+</Block>
+<BlockStub><StubParentName>vibrar</StubParentName><StubParentGenus>define-void</StubParentGenus><Block id="2071" genus-name="caller-command" >
+<Location><X>446</X><Y>982</Y></Location>
+<Label>vibrar</Label>
+<BeforeBlockId>1887</BeforeBlockId>
+<AfterBlockId>2055</AfterBlockId>
+</Block>
+</BlockStub>
+<BlockStub><StubParentName>abre_Sobre</StubParentName><StubParentGenus>define-void</StubParentGenus><Block id="2055" genus-name="caller-command" >
+<Location><X>446</X><Y>1010</Y></Location>
+<Comment>
+<Text>Chama o procedimento que realizar\u00e1 a abertura da tela de informa\u00e7\u00f5es \"Sobre\".</Text><Location><X>198</X><Y>978</Y></Location><BoxSize><Width>205</Width><Height>63</Height></BoxSize></Comment>
+<Label>abre_Sobre</Label>
+<BeforeBlockId>2071</BeforeBlockId>
+</Block>
+</BlockStub>
+<BlockStub><StubParentName>val_Distancia.Text</StubParentName><StubParentGenus>read-write-property</StubParentGenus><Block id="2141" genus-name="componentGetter" >
+<Location><X>1076</X><Y>523</Y></Location>
+<Label>val_Distancia.Text</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="2137" ></BlockConnector></Plug>
+</Block>
+</BlockStub>
+<Block id="2131" genus-name="define-void" >
+<Location><X>836</X><Y>491</Y></Location>
+<Comment>
+<Text>Procedimento que chama o sintetizador de voz para falar a dist\u00e2ncia lida.</Text><Location><X>1164</X><Y>459</Y></Location><BoxSize><Width>188</Width><Height>54</Height></BoxSize></Comment>
+<Label>fala_Distancia</Label>
+<Sockets num-sockets="2" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="arg" is-expandable="yes" position-type="single" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="cmd" init-type="cmd" label="do" is-indented="yes" position-type="single" con-block-id="2137" ></BlockConnector>
+</Sockets>
+</Block>
+<Block id="2137" genus-name="TextToSpeech-Speak" >
+<Location><X>868</X><Y>520</Y></Location>
+<Label>leitor_Texto.Speak</Label>
+<BeforeBlockId>2131</BeforeBlockId>
+<Sockets num-sockets="1" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="message" position-type="single" con-block-id="2141" ></BlockConnector>
+</Sockets>
+</Block>
+<Block id="1858" genus-name="define-void" >
+<Location><X>834</X><Y>614</Y></Location>
+<Comment>
+<Text>Procedimento respons\u00e1vel por abrir a tela de ajuda do monitoramento.</Text><Location><X>1104</X><Y>561</Y></Location><BoxSize><Width>215</Width><Height>46</Height></BoxSize></Comment>
+<Label>chama_Ajuda</Label>
+<Sockets num-sockets="2" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="arg" is-expandable="yes" position-type="single" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="cmd" init-type="cmd" label="do" is-indented="yes" position-type="single" con-block-id="1864" ></BlockConnector>
+</Sockets>
+</Block>
+<Block id="1864" genus-name="open-another-screen" >
+<Location><X>866</X><Y>643</Y></Location>
+<Label>open another screen</Label>
+<BeforeBlockId>1858</BeforeBlockId>
+<Sockets num-sockets="1" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="screenName" position-type="single" con-block-id="1866" ></BlockConnector>
+</Sockets>
+</Block>
+<Block id="1866" genus-name="text" >
+<Location><X>1102</X><Y>646</Y></Location>
+<Label>ajuda_Monitoramento</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="1864" ></BlockConnector></Plug>
+</Block>
+<Block id="2063" genus-name="Notifier-ShowAlert" >
+<Location><X>1769</X><Y>772</Y></Location>
+<Label>notificacao_Geral.ShowAlert</Label>
+<BeforeBlockId>2057</BeforeBlockId>
+<Sockets num-sockets="1" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="notice" position-type="single" con-block-id="2065" ></BlockConnector>
+</Sockets>
+</Block>
+<Block id="2065" genus-name="text" >
+<Location><X>2017</X><Y>775</Y></Location>
+<Label>Tente novamente!</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="2063" ></BlockConnector></Plug>
+</Block>
+<Block id="2059" genus-name="text" >
+<Location><X>2017</X><Y>737</Y></Location>
+<Label>Comando n\u00e3o encontrado!</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="2057" ></BlockConnector></Plug>
+</Block>
+<Block id="2057" genus-name="Notifier-ShowAlert" >
+<Location><X>1769</X><Y>734</Y></Location>
+<Label>notificacao_Geral.ShowAlert</Label>
+<BeforeBlockId>2082</BeforeBlockId>
+<AfterBlockId>2063</AfterBlockId>
+<Sockets num-sockets="1" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="notice" position-type="single" con-block-id="2059" ></BlockConnector>
+</Sockets>
+</Block>
+<BlockStub><StubParentName>clock_Conexao.TimerEnabled</StubParentName><StubParentGenus>read-write-property</StubParentGenus><Block id="1798" genus-name="componentSetter" >
+<Location><X>449</X><Y>97</Y></Location>
+<Comment>
+<Text>Desativa a fun\u00e7\u00e3o Sleep.</Text><Location><X>238</X><Y>89</Y></Location><BoxSize><Width>154</Width><Height>26</Height></BoxSize></Comment>
+<Label>clock_Conexao.TimerEnabled</Label>
+<BeforeBlockId>1791</BeforeBlockId>
+<AfterBlockId>1795</AfterBlockId>
+<Sockets num-sockets="1" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="to" position-type="single" con-block-id="1800" ></BlockConnector>
+</Sockets>
+</Block>
+</BlockStub>
+<Block id="1800" genus-name="false" >
+<Location><X>693</X><Y>100</Y></Location>
+<Label>false</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="1798" ></BlockConnector></Plug>
+</Block>
+<BlockStub><StubParentName>ada</StubParentName><StubParentGenus>def</StubParentGenus><Block id="2077" genus-name="setterGlobal" >
+<Location><X>449</X><Y>205</Y></Location>
+<Comment>
+<Text>Atribui o valor contido na posi\u00e7\u00e3o 2 da lista (Array) enviada pala tela inicial, para a variavel \"ada\".</Text><Location><X>231</X><Y>185</Y></Location><BoxSize><Width>193</Width><Height>59</Height></BoxSize></Comment>
+<Label>ada</Label>
+<BeforeBlockId>1795</BeforeBlockId>
+<AfterBlockId>1834</AfterBlockId>
+<Sockets num-sockets="1" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="to" position-type="single" con-block-id="2004" ></BlockConnector>
+</Sockets>
+</Block>
+</BlockStub>
+<BlockStub><StubParentName>endereco</StubParentName><StubParentGenus>def</StubParentGenus><Block id="1795" genus-name="setterGlobal" >
+<Location><X>449</X><Y>135</Y></Location>
+<Comment>
+<Text>Atribui o valor contido na posi\u00e7\u00e3o 1 da lista (Array) enviada pala tela inicial, para a variavel \"endereco\".</Text><Location><X>253</X><Y>68</Y></Location><BoxSize><Width>196</Width><Height>62</Height></BoxSize></Comment>
+<Label>endereco</Label>
+<BeforeBlockId>1798</BeforeBlockId>
+<AfterBlockId>2077</AfterBlockId>
+<Sockets num-sockets="1" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="to" position-type="single" con-block-id="2012" ></BlockConnector>
+</Sockets>
+</Block>
+</BlockStub>
+<Block id="1793" genus-name="false" >
+<Location><X>701</X><Y>62</Y></Location>
+<Label>false</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="1791" ></BlockConnector></Plug>
+</Block>
+<BlockStub><StubParentName>clock_Ultrassom.TimerEnabled</StubParentName><StubParentGenus>read-write-property</StubParentGenus><Block id="1791" genus-name="componentSetter" >
+<Location><X>449</X><Y>59</Y></Location>
+<Comment>
+<Text>Desativa a leitura dos dados do sensor ultrass\u00f4nico.</Text><Location><X>227</X><Y>36</Y></Location><BoxSize><Width>189</Width><Height>45</Height></BoxSize></Comment>
+<Label>clock_Ultrassom.TimerEnabled</Label>
+<BeforeBlockId>1787</BeforeBlockId>
+<AfterBlockId>1798</AfterBlockId>
+<Sockets num-sockets="1" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="to" position-type="single" con-block-id="1793" ></BlockConnector>
+</Sockets>
+</Block>
+</BlockStub>
+<Block id="1787" genus-name="Screen-Initialize" >
+<Location><X>421</X><Y>26</Y></Location>
+<Comment>
+<Text>Procedimento que \u00e9 executado quando a tela \u00e9 aberta.</Text><Location><X>669</X><Y>11</Y></Location><BoxSize><Width>173</Width><Height>42</Height></BoxSize></Comment>
+<Label>monitoramento.Initialize</Label>
+<Sockets num-sockets="1" >
+<BlockConnector connector-kind="socket" connector-type="cmd" init-type="cmd" label="do" is-indented="yes" position-type="single" con-block-id="1791" ></BlockConnector>
+</Sockets>
+</Block>
+<Block id="1775" genus-name="text" >
+<Location><X>141</X><Y>234</Y></Location>
+<Label></Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="1767" ></BlockConnector></Plug>
+</Block>
+<Block id="1767" genus-name="def" >
+<Location><X>31</X><Y>234</Y></Location>
+<Comment>
+<Text>Vari\u00e1vel quer armazenar\u00e1 o texto de apresenta\u00e7\u00e3o que ser\u00e1 lido pelo sintetizador de voz do app.</Text><Location><X>196</X><Y>185</Y></Location><BoxSize><Width>190</Width><Height>67</Height></BoxSize></Comment>
+<Label>ada</Label>
+<Sockets num-sockets="1" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="as" position-type="single" con-block-id="1775" ></BlockConnector>
+</Sockets>
+</Block>
+<Block id="1765" genus-name="text" >
+<Location><X>172</X><Y>166</Y></Location>
+<Label></Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="1757" ></BlockConnector></Plug>
+</Block>
+<Block id="1757" genus-name="def" >
+<Location><X>28</X><Y>166</Y></Location>
+<Comment>
+<Text>Vari\u00e1vel que armazenar\u00e1 o endere\u00e7o do dispositivo bluetooth ao qual o app ir\u00e1 se conectar.</Text><Location><X>209</X><Y>133</Y></Location><BoxSize><Width>183</Width><Height>68</Height></BoxSize></Comment>
+<Label>endereco</Label>
+<Sockets num-sockets="1" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="as" position-type="single" con-block-id="1765" ></BlockConnector>
+</Sockets>
+</Block>
+<Block id="1755" genus-name="number" >
+<Location><X>236</X><Y>102</Y></Location>
+<Label>2000</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="1747" ></BlockConnector></Plug>
+</Block>
+<Block id="1747" genus-name="def" >
+<Location><X>30</X><Y>102</Y></Location>
+<Comment>
+<Text>Vari\u00e1vel usada como par\u00e2metro da fun\u00e7\u00e3o implentada Sleep.</Text><Location><X>220</X><Y>41</Y></Location><BoxSize><Width>190</Width><Height>55</Height></BoxSize></Comment>
+<Label>tempo_Desconectar</Label>
+<Sockets num-sockets="1" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="as" position-type="single" con-block-id="1755" ></BlockConnector>
+</Sockets>
+</Block>
+<Block id="1745" genus-name="text" >
+<Location><X>171</X><Y>38</Y></Location>
+<Label></Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="1737" ></BlockConnector></Plug>
+</Block>
+<Block id="1737" genus-name="def" >
+<Location><X>29</X><Y>38</Y></Location>
+<Comment>
+<Text>Vari\u00e1vel que armazenar\u00e1 o valor da dist\u00e2ncia lido pelo sensor ultrass\u00f4nico.</Text><Location><X>233</X><Y>0</Y></Location><BoxSize><Width>186</Width><Height>57</Height></BoxSize></Comment>
+<Label>distancia</Label>
+<Sockets num-sockets="1" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="as" position-type="single" con-block-id="1745" ></BlockConnector>
+</Sockets>
+</Block>
+<Block id="2004" genus-name="get-list-item" >
+<Location><X>577</X><Y>208</Y></Location>
+<Label>select list item</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="2077" ></BlockConnector></Plug>
+<Sockets num-sockets="2" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="list" position-type="single" con-block-id="2006" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="index" position-type="single" con-block-id="2008" ></BlockConnector>
+</Sockets>
+</Block>
+<Block id="2006" genus-name="get-start-value" >
+<Location><X>749</X><Y>208</Y></Location>
+<Label>get start value</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="2004" ></BlockConnector></Plug>
+</Block>
+<BlockStub><StubParentName>endereco</StubParentName><StubParentGenus>def</StubParentGenus><Block id="2101" genus-name="getterGlobal" >
+<Location><X>1247</X><Y>60</Y></Location>
+<Label>endereco</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="2099" ></BlockConnector></Plug>
+</Block>
+</BlockStub>
+<Block id="2099" genus-name="BluetoothClient-Connect" >
+<Location><X>1041</X><Y>60</Y></Location>
+<Label>bluetooth.Connect</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="2097" ></BlockConnector></Plug>
+<Sockets num-sockets="1" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="address" position-type="single" con-block-id="2101" ></BlockConnector>
+</Sockets>
+</Block>
+<Block id="2105" genus-name="true" >
+<Location><X>1253</X><Y>102</Y></Location>
+<Label>true</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="2103" ></BlockConnector></Plug>
+</Block>
+<BlockStub><StubParentName>clock_Ultrassom.TimerEnabled</StubParentName><StubParentGenus>read-write-property</StubParentGenus><Block id="2103" genus-name="componentSetter" >
+<Location><X>1001</X><Y>99</Y></Location>
+<Comment>
+<Text>Habilita o procedimento para a leitura do sensor ultrass\u00f4nico.</Text><Location><X>1254</X><Y>138</Y></Location><BoxSize><Width>175</Width><Height>45</Height></BoxSize></Comment>
+<Label>clock_Ultrassom.TimerEnabled</Label>
+<BeforeBlockId>2097</BeforeBlockId>
+<Sockets num-sockets="1" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="to" position-type="single" con-block-id="2105" ></BlockConnector>
+</Sockets>
+</Block>
+</BlockStub>
+<Block id="2097" genus-name="glue" >
+<Location><X>1001</X><Y>57</Y></Location>
+<Comment>
+<Text>Conecta-se ao dispositivo \"endereco\".</Text><Location><X>725</X><Y>38</Y></Location><BoxSize><Width>214</Width><Height>29</Height></BoxSize></Comment>
+<Label>|</Label>
+<BeforeBlockId>2091</BeforeBlockId>
+<AfterBlockId>2103</AfterBlockId>
+<Sockets num-sockets="1" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="2099" ></BlockConnector>
+</Sockets>
+</Block>
+<Block id="2091" genus-name="define-void" >
+<Location><X>969</X><Y>28</Y></Location>
+<Comment>
+<Text>Procedimento respons\u00e1vel por realizar a conex\u00e3o do dispositivo com o arduino.</Text><Location><X>1166</X><Y>0</Y></Location><BoxSize><Width>195</Width><Height>54</Height></BoxSize></Comment>
+<Label>conectar</Label>
+<Sockets num-sockets="2" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="arg" is-expandable="yes" position-type="single" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="cmd" init-type="cmd" label="do" is-indented="yes" position-type="single" con-block-id="2097" ></BlockConnector>
+</Sockets>
+</Block>
+<Block id="2115" genus-name="false" >
+<Location><X>1256</X><Y>219</Y></Location>
+<Label>false</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="2113" ></BlockConnector></Plug>
+</Block>
+<Block id="2117" genus-name="BluetoothClient-Disconnect" >
+<Location><X>1004</X><Y>254</Y></Location>
+<Comment>
+<Text>Disconecta o dispositivo.</Text><Location><X>1238</X><Y>277</Y></Location><BoxSize><Width>160</Width><Height>29</Height></BoxSize></Comment>
+<Label>bluetooth.Disconnect</Label>
+<BeforeBlockId>2113</BeforeBlockId>
+</Block>
+<BlockStub><StubParentName>clock_Ultrassom.TimerEnabled</StubParentName><StubParentGenus>read-write-property</StubParentGenus><Block id="2113" genus-name="componentSetter" >
+<Location><X>1004</X><Y>216</Y></Location>
+<Comment>
+<Text>Desbilita o procedimento que realiza a leitura do sensor ultrass\u00f4nico.</Text><Location><X>1196</X><Y>166</Y></Location><BoxSize><Width>203</Width><Height>57</Height></BoxSize></Comment>
+<Label>clock_Ultrassom.TimerEnabled</Label>
+<BeforeBlockId>2107</BeforeBlockId>
+<AfterBlockId>2117</AfterBlockId>
+<Sockets num-sockets="1" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="to" position-type="single" con-block-id="2115" ></BlockConnector>
+</Sockets>
+</Block>
+</BlockStub>
+<Block id="2107" genus-name="define-void" >
+<Location><X>972</X><Y>187</Y></Location>
+<Comment>
+<Text>Procedimento respons\u00e1vel pela desconex\u00e3o do dispositivo com o arduino.</Text><Location><X>1193</X><Y>148</Y></Location><BoxSize><Width>197</Width><Height>60</Height></BoxSize></Comment>
+<Label>desconectar</Label>
+<Sockets num-sockets="2" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="arg" is-expandable="yes" position-type="single" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="cmd" init-type="cmd" label="do" is-indented="yes" position-type="single" con-block-id="2113" ></BlockConnector>
+</Sockets>
+</Block>
+<Block id="2008" genus-name="number" >
+<Location><X>749</X><Y>236</Y></Location>
+<Label>2</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="2004" ></BlockConnector></Plug>
+</Block>
+<Block id="2014" genus-name="get-start-value" >
+<Location><X>783</X><Y>138</Y></Location>
+<Label>get start value</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="2012" ></BlockConnector></Plug>
+</Block>
+<Block id="2016" genus-name="number" >
+<Location><X>783</X><Y>166</Y></Location>
+<Label>1</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="2012" ></BlockConnector></Plug>
+</Block>
+<Block id="2012" genus-name="get-list-item" >
+<Location><X>611</X><Y>138</Y></Location>
+<Label>select list item</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="1795" ></BlockConnector></Plug>
+<Sockets num-sockets="2" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="list" position-type="single" con-block-id="2014" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="index" position-type="single" con-block-id="2016" ></BlockConnector>
+</Sockets>
+</Block>
+<BlockStub><StubParentName>fechar</StubParentName><StubParentGenus>define-void</StubParentGenus><Block id="1803" genus-name="caller-command" >
+<Location><X>445</X><Y>894</Y></Location>
+<Label>fechar</Label>
+<BeforeBlockId>1799</BeforeBlockId>
+</Block>
+</BlockStub>
+<Block id="1799" genus-name="Screen-BackPressed" >
+<Location><X>417</X><Y>861</Y></Location>
+<Comment>
+<Text>A\u00e7\u00e3o executada quando o bot\u00e3o de voltar do android \u00e9 tocado.</Text><Location><X>190</X><Y>846</Y></Location><BoxSize><Width>193</Width><Height>43</Height></BoxSize></Comment>
+<Label>monitoramento.BackPressed</Label>
+<Sockets num-sockets="1" >
+<BlockConnector connector-kind="socket" connector-type="cmd" init-type="cmd" label="do" is-indented="yes" position-type="single" con-block-id="1803" ></BlockConnector>
+</Sockets>
+</Block>
+<Block id="2165" genus-name="argument" >
+<Location><X>1780</X><Y>26</Y></Location>
+<Label>result</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="2161" ></BlockConnector></Plug>
+</Block>
+<Block id="2185" genus-name="text" >
+<Location><X>1921</X><Y>69</Y></Location>
+<Label>controle</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="2181" ></BlockConnector></Plug>
+</Block>
+<Block id="2181" genus-name="yail-equal" >
+<Location><X>1692</X><Y>62</Y></Location>
+<Label>=</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="2179" ></BlockConnector></Plug>
+<Sockets num-sockets="2" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="" position-type="bottom" con-block-id="2074" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="" position-type="bottom" con-block-id="2185" ></BlockConnector>
+</Sockets>
+</Block>
+<BlockStub><StubParentName>reconhecedor_Voz.Result</StubParentName><StubParentGenus>read-only-property</StubParentGenus><Block id="2189" genus-name="componentGetter" >
+<Location><X>1702</X><Y>105</Y></Location>
+<Label>reconhecedor_Voz.Result</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="2187" ></BlockConnector></Plug>
+</Block>
+</BlockStub>
+<Block id="2191" genus-name="text" >
+<Location><X>1921</X><Y>105</Y></Location>
+<Label>sair</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="2187" ></BlockConnector></Plug>
+</Block>
+<Block id="2187" genus-name="yail-equal" >
+<Location><X>1692</X><Y>98</Y></Location>
+<Label>=</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="2179" ></BlockConnector></Plug>
+<Sockets num-sockets="2" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="" position-type="bottom" con-block-id="2189" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="" position-type="bottom" con-block-id="2191" ></BlockConnector>
+</Sockets>
+</Block>
+<BlockStub><StubParentName>reconhecedor_Voz.Result</StubParentName><StubParentGenus>read-only-property</StubParentGenus><Block id="2195" genus-name="componentGetter" >
+<Location><X>1702</X><Y>141</Y></Location>
+<Label>reconhecedor_Voz.Result</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="2193" ></BlockConnector></Plug>
+</Block>
+</BlockStub>
+<Block id="2197" genus-name="text" >
+<Location><X>1921</X><Y>141</Y></Location>
+<Label>fechar</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="2193" ></BlockConnector></Plug>
+</Block>
+<Block id="2193" genus-name="yail-equal" >
+<Location><X>1692</X><Y>134</Y></Location>
+<Label>=</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="2179" ></BlockConnector></Plug>
+<Sockets num-sockets="2" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="" position-type="bottom" con-block-id="2195" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="" position-type="bottom" con-block-id="2197" ></BlockConnector>
+</Sockets>
+</Block>
+<BlockStub><StubParentName>reconhecedor_Voz.Result</StubParentName><StubParentGenus>read-only-property</StubParentGenus><Block id="2201" genus-name="componentGetter" >
+<Location><X>1702</X><Y>177</Y></Location>
+<Label>reconhecedor_Voz.Result</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="2199" ></BlockConnector></Plug>
+</Block>
+</BlockStub>
+<Block id="2203" genus-name="text" >
+<Location><X>1921</X><Y>177</Y></Location>
+<Label>voltar</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="2199" ></BlockConnector></Plug>
+</Block>
+<Block id="2199" genus-name="yail-equal" >
+<Location><X>1692</X><Y>170</Y></Location>
+<Label>=</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="2179" ></BlockConnector></Plug>
+<Sockets num-sockets="2" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="" position-type="bottom" con-block-id="2201" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="" position-type="bottom" con-block-id="2203" ></BlockConnector>
+</Sockets>
+</Block>
+<Block id="2179" genus-name="or" >
+<Location><X>1626</X><Y>62</Y></Location>
+<Label>or</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="1884" ></BlockConnector></Plug>
+<Sockets num-sockets="5" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="test" is-expandable="yes" position-type="single" con-block-id="2181" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="test" is-expandable="yes" position-type="single" con-block-id="2187" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="test" is-expandable="yes" position-type="single" con-block-id="2193" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="test" is-expandable="yes" position-type="single" con-block-id="2199" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="test" is-expandable="yes" position-type="single" ></BlockConnector>
+</Sockets>
+</Block>
+<BlockStub><StubParentName>fechar</StubParentName><StubParentGenus>define-void</StubParentGenus><Block id="2205" genus-name="caller-command" >
+<Location><X>1566</X><Y>277</Y></Location>
+<Label>fechar</Label>
+<BeforeBlockId>2056</BeforeBlockId>
+</Block>
+</BlockStub>
+<BlockStub><StubParentName>reconhecedor_Voz.Result</StubParentName><StubParentGenus>read-only-property</StubParentGenus><Block id="2211" genus-name="componentGetter" >
+<Location><X>1687</X><Y>326</Y></Location>
+<Label>reconhecedor_Voz.Result</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="2209" ></BlockConnector></Plug>
+</Block>
+</BlockStub>
+<Block id="2213" genus-name="text" >
+<Location><X>1906</X><Y>326</Y></Location>
+<Label>qual \u00e9 a dist\u00e2ncia</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="2209" ></BlockConnector></Plug>
+</Block>
+<Block id="2209" genus-name="yail-equal" >
+<Location><X>1677</X><Y>319</Y></Location>
+<Label>=</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="1886" ></BlockConnector></Plug>
+<Sockets num-sockets="2" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="" position-type="bottom" con-block-id="2211" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="" position-type="bottom" con-block-id="2213" ></BlockConnector>
+</Sockets>
+</Block>
+<BlockStub><StubParentName>fala_Distancia</StubParentName><StubParentGenus>define-void</StubParentGenus><Block id="2215" genus-name="caller-command" >
+<Location><X>1617</X><Y>360</Y></Location>
+<Label>fala_Distancia</Label>
+<BeforeBlockId>1886</BeforeBlockId>
+</Block>
+</BlockStub>
+<BlockStub><StubParentName>reconhecedor_Voz.Result</StubParentName><StubParentGenus>read-only-property</StubParentGenus><Block id="2225" genus-name="componentGetter" >
+<Location><X>1738</X><Y>409</Y></Location>
+<Label>reconhecedor_Voz.Result</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="2223" ></BlockConnector></Plug>
+</Block>
+</BlockStub>
+<Block id="2227" genus-name="text" >
+<Location><X>1957</X><Y>409</Y></Location>
+<Label>ajuda</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="2223" ></BlockConnector></Plug>
+</Block>
+<Block id="2223" genus-name="yail-equal" >
+<Location><X>1728</X><Y>402</Y></Location>
+<Label>=</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="1888" ></BlockConnector></Plug>
+<Sockets num-sockets="2" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="" position-type="bottom" con-block-id="2225" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="" position-type="bottom" con-block-id="2227" ></BlockConnector>
+</Sockets>
+</Block>
+<BlockStub><StubParentName>chama_Ajuda</StubParentName><StubParentGenus>define-void</StubParentGenus><Block id="1868" genus-name="caller-command" >
+<Location><X>1668</X><Y>481</Y></Location>
+<Label>chama_Ajuda</Label>
+<BeforeBlockId>2068</BeforeBlockId>
+</Block>
+</BlockStub>
+<BlockStub><StubParentName>reconhecedor_Voz.Result</StubParentName><StubParentGenus>read-only-property</StubParentGenus><Block id="2237" genus-name="componentGetter" >
+<Location><X>1789</X><Y>530</Y></Location>
+<Label>reconhecedor_Voz.Result</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="2235" ></BlockConnector></Plug>
+</Block>
+</BlockStub>
+<Block id="2239" genus-name="text" >
+<Location><X>2008</X><Y>530</Y></Location>
+<Label>sobre</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="2235" ></BlockConnector></Plug>
+</Block>
+<Block id="2235" genus-name="yail-equal" >
+<Location><X>1779</X><Y>523</Y></Location>
+<Label>=</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="1890" ></BlockConnector></Plug>
+<Sockets num-sockets="2" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="" position-type="bottom" con-block-id="2237" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="" position-type="bottom" con-block-id="2239" ></BlockConnector>
+</Sockets>
+</Block>
+<BlockStub><StubParentName>reconhecedor_Voz.Result</StubParentName><StubParentGenus>read-only-property</StubParentGenus><Block id="2247" genus-name="componentGetter" >
+<Location><X>1840</X><Y>613</Y></Location>
+<Label>reconhecedor_Voz.Result</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="2245" ></BlockConnector></Plug>
+</Block>
+</BlockStub>
+<Block id="2249" genus-name="text" >
+<Location><X>2059</X><Y>613</Y></Location>
+<Label>quem \u00e9 voc\u00ea</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="2245" ></BlockConnector></Plug>
+</Block>
+<Block id="2245" genus-name="yail-equal" >
+<Location><X>1830</X><Y>606</Y></Location>
+<Label>=</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="1889" ></BlockConnector></Plug>
+<Sockets num-sockets="2" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="" position-type="bottom" con-block-id="2247" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="" position-type="bottom" con-block-id="2249" ></BlockConnector>
+</Sockets>
+</Block>
+<Block id="2251" genus-name="TextToSpeech-Speak" >
+<Location><X>1770</X><Y>647</Y></Location>
+<Label>leitor_Texto.Speak</Label>
+<BeforeBlockId>1889</BeforeBlockId>
+<Sockets num-sockets="1" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="message" position-type="single" con-block-id="2255" ></BlockConnector>
+</Sockets>
+</Block>
+<Block id="1889" genus-name="ifelse" >
+<Location><X>1718</X><Y>603</Y></Location>
+<Comment>
+<Text>Caso o usu\u00e1rio diga \"quem \u00e9 voc\u00ea\", chama o sintetizador de voz para ler o texto \"ada\". Caso o comando reconhecido, n\u00e3o seja encontrado, toca o som de comando n\u00e3o encontrado e exibe mensagem ao usu\u00e1rio.</Text><Location><X>2169</X><Y>546</Y></Location><BoxSize><Width>253</Width><Height>86</Height></BoxSize></Comment>
+<Label>ifelse</Label>
+<BeforeBlockId>1890</BeforeBlockId>
+<Sockets num-sockets="3" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="test" position-type="single" con-block-id="2245" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="cmd" init-type="cmd" label="then-do" is-indented="yes" position-type="single" con-block-id="2251" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="cmd" init-type="cmd" label="else-do" is-indented="yes" position-type="single" con-block-id="2082" ></BlockConnector>
+</Sockets>
+</Block>
+<Block id="1890" genus-name="ifelse" >
+<Location><X>1667</X><Y>520</Y></Location>
+<Comment>
+<Text>Caso o usu\u00e1rio diga \"sobre\", chama procedimento que \u00e9 respons\u00e1vel por abrir a tela de informa\u00e7\u00f5es \"Sobre\".</Text><Location><X>2182</X><Y>495</Y></Location><BoxSize><Width>211</Width><Height>52</Height></BoxSize></Comment>
+<Label>ifelse</Label>
+<BeforeBlockId>1888</BeforeBlockId>
+<Sockets num-sockets="3" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="test" position-type="single" con-block-id="2235" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="cmd" init-type="cmd" label="then-do" is-indented="yes" position-type="single" con-block-id="2072" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="cmd" init-type="cmd" label="else-do" is-indented="yes" position-type="single" con-block-id="1889" ></BlockConnector>
+</Sockets>
+</Block>
+<Block id="1888" genus-name="ifelse" >
+<Location><X>1616</X><Y>399</Y></Location>
+<Comment>
+<Text>Caso o usu\u00e1rio diga \"ajuda\", toca o som de comando encontrado, e chama o procedimento respons\u00e1vel por abrir a tela de ajuda.</Text><Location><X>2136</X><Y>381</Y></Location><BoxSize><Width>213</Width><Height>75</Height></BoxSize></Comment>
+<Label>ifelse</Label>
+<BeforeBlockId>1886</BeforeBlockId>
+<Sockets num-sockets="3" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="test" position-type="single" con-block-id="2223" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="cmd" init-type="cmd" label="then-do" is-indented="yes" position-type="single" con-block-id="2068" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="cmd" init-type="cmd" label="else-do" is-indented="yes" position-type="single" con-block-id="1890" ></BlockConnector>
+</Sockets>
+</Block>
+<Block id="1886" genus-name="ifelse" >
+<Location><X>1565</X><Y>316</Y></Location>
+<Comment>
+<Text>Caso o usu\u00e1rio diga \"qual a dist\u00e2ncia\", chama o procedimento que fala a dist\u00e2ncia por meio do sintetizador de voz.</Text><Location><X>2053</X><Y>241</Y></Location><BoxSize><Width>192</Width><Height>70</Height></BoxSize></Comment>
+<Label>ifelse</Label>
+<BeforeBlockId>1884</BeforeBlockId>
+<Sockets num-sockets="3" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="test" position-type="single" con-block-id="2209" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="cmd" init-type="cmd" label="then-do" is-indented="yes" position-type="single" con-block-id="2215" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="cmd" init-type="cmd" label="else-do" is-indented="yes" position-type="single" con-block-id="1888" ></BlockConnector>
+</Sockets>
+</Block>
+<Block id="1884" genus-name="ifelse" >
+<Location><X>1514</X><Y>59</Y></Location>
+<Comment>
+<Text>Caso o usu\u00e1rio diga \"controle\", \"sair\", \"fechar\" ou \"voltar\", toca o som de comando encontrado, e chama o procedimento que fecha o app.</Text><Location><X>2064</X><Y>8</Y></Location><BoxSize><Width>196</Width><Height>88</Height></BoxSize></Comment>
+<Label>ifelse</Label>
+<BeforeBlockId>2161</BeforeBlockId>
+<Sockets num-sockets="3" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="test" position-type="single" con-block-id="2179" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="cmd" init-type="cmd" label="then-do" is-indented="yes" position-type="single" con-block-id="2056" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="cmd" init-type="cmd" label="else-do" is-indented="yes" position-type="single" con-block-id="1886" ></BlockConnector>
+</Sockets>
+</Block>
+<Block id="2161" genus-name="SpeechRecognizer-AfterGettingText" >
+<Location><X>1470</X><Y>23</Y></Location>
+<Comment>
+<Text>\u00c9 executado assim que o reconhecedor de voz, reconhece algo. Esse procedimento verifica por meio de estruturas condicionais se o comando lido \u00e9 algum comando conhecido, e caso seja executa a a\u00e7\u00e3o corresposndente.</Text><Location><X>2062</X><Y>4</Y></Location><BoxSize><Width>208</Width><Height>114</Height></BoxSize></Comment>
+<Label>reconhecedor_Voz.AfterGettingText</Label>
+<Sockets num-sockets="2" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="result" position-type="single" con-block-id="2165" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="cmd" init-type="cmd" label="do" is-indented="yes" position-type="single" con-block-id="1884" ></BlockConnector>
+</Sockets>
+</Block>
+<Block id="1838" genus-name="get-start-value" >
+<Location><X>799</X><Y>278</Y></Location>
+<Label>get start value</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="1836" ></BlockConnector></Plug>
+</Block>
+<Block id="1840" genus-name="number" >
+<Location><X>799</X><Y>306</Y></Location>
+<Label>3</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="1836" ></BlockConnector></Plug>
+</Block>
+<Block id="1836" genus-name="get-list-item" >
+<Location><X>627</X><Y>278</Y></Location>
+<Label>select list item</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="1834" ></BlockConnector></Plug>
+<Sockets num-sockets="2" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="list" position-type="single" con-block-id="1838" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="index" position-type="single" con-block-id="1840" ></BlockConnector>
+</Sockets>
+</Block>
+<Block id="1854" genus-name="get-start-value" >
+<Location><X>783</X><Y>348</Y></Location>
+<Label>get start value</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="1852" ></BlockConnector></Plug>
+</Block>
+<Block id="1856" genus-name="number" >
+<Location><X>783</X><Y>376</Y></Location>
+<Label>4</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="1852" ></BlockConnector></Plug>
+</Block>
+<Block id="1852" genus-name="get-list-item" >
+<Location><X>611</X><Y>348</Y></Location>
+<Label>select list item</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="1850" ></BlockConnector></Plug>
+<Sockets num-sockets="2" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="list" position-type="single" con-block-id="1854" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="index" position-type="single" con-block-id="1856" ></BlockConnector>
+</Sockets>
+</Block>
+<Block id="2123" genus-name="text" >
+<Location><X>647</X><Y>446</Y></Location>
+<Label>U</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="2121" ></BlockConnector></Plug>
+</Block>
+<Block id="2121" genus-name="BluetoothClient-SendText" >
+<Location><X>449</X><Y>443</Y></Location>
+<Comment>
+<Text>Envia um primeiro caractere requerendo a dist\u00e2ncia do sensor ultrass\u00f4nico para o arduino, isso \u00e9 feito para normalizar e inicializar os dados que depois ser\u00e3o lidos, evitando que seja exibido uma dist\u00e2ncia \"vazia\" no campo de texto.</Text><Location><X>168</X><Y>410</Y></Location><BoxSize><Width>261</Width><Height>88</Height></BoxSize></Comment>
+<Label>bluetooth.SendText</Label>
+<BeforeBlockId>2119</BeforeBlockId>
+<Sockets num-sockets="1" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="text" position-type="single" con-block-id="2123" ></BlockConnector>
+</Sockets>
+</Block>
+<BlockStub><StubParentName>conectar</StubParentName><StubParentGenus>define-void</StubParentGenus><Block id="2119" genus-name="caller-command" >
+<Location><X>449</X><Y>415</Y></Location>
+<Comment>
+<Text>Chama o procedimento que realizar\u00e1 a conex\u00e3o do dispositivo.</Text><Location><X>211</X><Y>397</Y></Location><BoxSize><Width>208</Width><Height>44</Height></BoxSize></Comment>
+<Label>conectar</Label>
+<BeforeBlockId>1850</BeforeBlockId>
+<AfterBlockId>2121</AfterBlockId>
+</Block>
+</BlockStub>
+<BlockStub><StubParentName>sobre_Int</StubParentName><StubParentGenus>def</StubParentGenus><Block id="1850" genus-name="setterGlobal" >
+<Location><X>449</X><Y>345</Y></Location>
+<Comment>
+<Text>Atribui o valor contido na posi\u00e7\u00e3o 4 da lista (Array) enviada pala tela inicial, para a variavel \"sobre_Int\".</Text><Location><X>263</X><Y>338</Y></Location><BoxSize><Width>199</Width><Height>58</Height></BoxSize></Comment>
+<Label>sobre_Int</Label>
+<BeforeBlockId>1834</BeforeBlockId>
+<AfterBlockId>2119</AfterBlockId>
+<Sockets num-sockets="1" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="to" position-type="single" con-block-id="1852" ></BlockConnector>
+</Sockets>
+</Block>
+</BlockStub>
+<BlockStub><StubParentName>sobre_Princ</StubParentName><StubParentGenus>def</StubParentGenus><Block id="1834" genus-name="setterGlobal" >
+<Location><X>449</X><Y>275</Y></Location>
+<Comment>
+<Text>Atribui o valor contido na posi\u00e7\u00e3o 3 da lista (Array) enviada pala tela inicial, para a variavel \"sobre_Princ\".</Text><Location><X>263</X><Y>248</Y></Location><BoxSize><Width>198</Width><Height>68</Height></BoxSize></Comment>
+<Label>sobre_Princ</Label>
+<BeforeBlockId>2077</BeforeBlockId>
+<AfterBlockId>1850</AfterBlockId>
+<Sockets num-sockets="1" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="to" position-type="single" con-block-id="1836" ></BlockConnector>
+</Sockets>
+</Block>
+</BlockStub>
+<Block id="1828" genus-name="text" >
+<Location><X>191</X><Y>303</Y></Location>
+<Label></Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="1804" ></BlockConnector></Plug>
+</Block>
+<Block id="1804" genus-name="def" >
+<Location><X>31</X><Y>303</Y></Location>
+<Comment>
+<Text>Vari\u00e1vel que armazenar\u00e1 o texto da primeira tela de informa\u00e7\u00f5es \"Sobre\".</Text><Location><X>219</X><Y>237</Y></Location><BoxSize><Width>185</Width><Height>61</Height></BoxSize></Comment>
+<Label>sobre_Princ</Label>
+<Sockets num-sockets="1" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="as" position-type="single" con-block-id="1828" ></BlockConnector>
+</Sockets>
+</Block>
+<Block id="2058" genus-name="text" >
+<Location><X>1700</X><Y>242</Y></Location>
+<Label>som_voz_Ok.mp3</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="2056" ></BlockConnector></Plug>
+</Block>
+<BlockStub><StubParentName>play_Som</StubParentName><StubParentGenus>define-void</StubParentGenus><Block id="2056" genus-name="caller-command" >
+<Location><X>1566</X><Y>239</Y></Location>
+<Label>play_Som</Label>
+<BeforeBlockId>1884</BeforeBlockId>
+<AfterBlockId>2205</AfterBlockId>
+<Sockets num-sockets="1" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="path" position-type="single" con-block-id="2058" ></BlockConnector>
+</Sockets>
+</Block>
+</BlockStub>
+<Block id="2070" genus-name="text" >
+<Location><X>1802</X><Y>446</Y></Location>
+<Label>som_voz_Ok.mp3</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="2068" ></BlockConnector></Plug>
+</Block>
+<BlockStub><StubParentName>play_Som</StubParentName><StubParentGenus>define-void</StubParentGenus><Block id="2068" genus-name="caller-command" >
+<Location><X>1668</X><Y>443</Y></Location>
+<Label>play_Som</Label>
+<BeforeBlockId>1888</BeforeBlockId>
+<AfterBlockId>1868</AfterBlockId>
+<Sockets num-sockets="1" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="path" position-type="single" con-block-id="2070" ></BlockConnector>
+</Sockets>
+</Block>
+</BlockStub>
+<BlockStub><StubParentName>abre_Sobre</StubParentName><StubParentGenus>define-void</StubParentGenus><Block id="2072" genus-name="caller-command" >
+<Location><X>1719</X><Y>564</Y></Location>
+<Label>abre_Sobre</Label>
+<BeforeBlockId>1890</BeforeBlockId>
+</Block>
+</BlockStub>
+<BlockStub><StubParentName>play_Som</StubParentName><StubParentGenus>define-void</StubParentGenus><Block id="2082" genus-name="caller-command" >
+<Location><X>1769</X><Y>696</Y></Location>
+<Label>play_Som</Label>
+<BeforeBlockId>1889</BeforeBlockId>
+<AfterBlockId>2057</AfterBlockId>
+<Sockets num-sockets="1" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="path" position-type="single" con-block-id="2084" ></BlockConnector>
+</Sockets>
+</Block>
+</BlockStub>
+<Block id="2084" genus-name="text" >
+<Location><X>1903</X><Y>699</Y></Location>
+<Label>som_voz_NOk.mp3</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="2082" ></BlockConnector></Plug>
+</Block>
+<Block id="2265" genus-name="text" >
+<Location><X>640</X><Y>1498</Y></Location>
+<Label>U</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="2263" ></BlockConnector></Plug>
+</Block>
+<Block id="2271" genus-name="BluetoothClient-BytesAvailableToReceive" >
+<Location><X>544</X><Y>1543</Y></Location>
+<Label>bluetooth.BytesAvailableToReceive</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="2269" ></BlockConnector></Plug>
+</Block>
+<Block id="2273" genus-name="number" >
+<Location><X>839</X><Y>1543</Y></Location>
+<Label>0</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="2269" ></BlockConnector></Plug>
+</Block>
+<Block id="2269" genus-name="greaterthan" >
+<Location><X>534</X><Y>1536</Y></Location>
+<Label>&gt;</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="2267" ></BlockConnector></Plug>
+<Sockets num-sockets="2" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="" position-type="bottom" con-block-id="2271" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="" position-type="bottom" con-block-id="2273" ></BlockConnector>
+</Sockets>
+</Block>
+<BlockStub><StubParentName>distancia</StubParentName><StubParentGenus>def</StubParentGenus><Block id="2281" genus-name="getterGlobal" >
+<Location><X>632</X><Y>1591</Y></Location>
+<Label>distancia</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="2279" ></BlockConnector></Plug>
+</Block>
+</BlockStub>
+<Block id="2285" genus-name="BluetoothClient-BytesAvailableToReceive" >
+<Location><X>1070</X><Y>1587</Y></Location>
+<Label>bluetooth.BytesAvailableToReceive</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="2283" ></BlockConnector></Plug>
+</Block>
+<Block id="2283" genus-name="BluetoothClient-ReceiveText" >
+<Location><X>806</X><Y>1587</Y></Location>
+<Label>bluetooth.ReceiveText</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="2279" ></BlockConnector></Plug>
+<Sockets num-sockets="1" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="numberOfBytes" position-type="single" con-block-id="2285" ></BlockConnector>
+</Sockets>
+</Block>
+<Block id="2279" genus-name="string-append" >
+<Location><X>622</X><Y>1580</Y></Location>
+<Label>join</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="2277" ></BlockConnector></Plug>
+<Sockets num-sockets="2" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="" position-type="bottom" con-block-id="2281" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="" position-type="bottom" con-block-id="2283" ></BlockConnector>
+</Sockets>
+</Block>
+<BlockStub><StubParentName>distancia</StubParentName><StubParentGenus>def</StubParentGenus><Block id="2277" genus-name="setterGlobal" >
+<Location><X>476</X><Y>1577</Y></Location>
+<Label>distancia</Label>
+<BeforeBlockId>2267</BeforeBlockId>
+<Sockets num-sockets="1" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="to" position-type="single" con-block-id="2279" ></BlockConnector>
+</Sockets>
+</Block>
+</BlockStub>
+<BlockStub><StubParentName>distancia</StubParentName><StubParentGenus>def</StubParentGenus><Block id="2291" genus-name="getterGlobal" >
+<Location><X>758</X><Y>1643</Y></Location>
+<Label>distancia</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="2289" ></BlockConnector></Plug>
+</Block>
+</BlockStub>
+<Block id="2293" genus-name="text" >
+<Location><X>758</X><Y>1671</Y></Location>
+<Label> cm</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="2289" ></BlockConnector></Plug>
+</Block>
+<Block id="2289" genus-name="string-vappend" >
+<Location><X>620</X><Y>1643</Y></Location>
+<Label>make text</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="2287" ></BlockConnector></Plug>
+<Sockets num-sockets="3" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="text" is-expandable="yes" position-type="single" con-block-id="2291" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="text" is-expandable="yes" position-type="single" con-block-id="2293" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="text" is-expandable="yes" position-type="single" ></BlockConnector>
+</Sockets>
+</Block>
+<Block id="2297" genus-name="text" >
+<Location><X>602</X><Y>1737</Y></Location>
+<Label></Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="2295" ></BlockConnector></Plug>
+</Block>
+<BlockStub><StubParentName>distancia</StubParentName><StubParentGenus>def</StubParentGenus><Block id="2295" genus-name="setterGlobal" >
+<Location><X>442</X><Y>1734</Y></Location>
+<Comment>
+<Text>Limpa o valor presente na vari\u00e1vel \"distancia\", para realizar a pr\u00f3xima leitura.</Text><Location><X>206</X><Y>1715</Y></Location><BoxSize><Width>197</Width><Height>55</Height></BoxSize></Comment>
+<Label>distancia</Label>
+<BeforeBlockId>2287</BeforeBlockId>
+<Sockets num-sockets="1" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="to" position-type="single" con-block-id="2297" ></BlockConnector>
+</Sockets>
+</Block>
+</BlockStub>
+<BlockStub><StubParentName>val_Distancia.Text</StubParentName><StubParentGenus>read-write-property</StubParentGenus><Block id="2287" genus-name="componentSetter" >
+<Location><X>442</X><Y>1640</Y></Location>
+<Comment>
+<Text>Atribui \u00e0 vari\u00e1vel \"val_Distancia\" o valor lido.</Text><Location><X>179</X><Y>1618</Y></Location><BoxSize><Width>203</Width><Height>40</Height></BoxSize></Comment>
+<Label>val_Distancia.Text</Label>
+<BeforeBlockId>2267</BeforeBlockId>
+<AfterBlockId>2295</AfterBlockId>
+<Sockets num-sockets="1" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="to" position-type="single" con-block-id="2289" ></BlockConnector>
+</Sockets>
+</Block>
+</BlockStub>
+<Block id="2267" genus-name="while" >
+<Location><X>442</X><Y>1533</Y></Location>
+<Comment>
+<Text>Enquanto tiver dados para ler na serial, ou seja, enquanto n\u00e3o ler todos os caracteres que formam o n\u00ba enviado, concatena esses dados na vari\u00e1vel, dist\u00e2ncia.</Text><Location><X>162</X><Y>1456</Y></Location><BoxSize><Width>197</Width><Height>84</Height></BoxSize></Comment>
+<Label>while</Label>
+<BeforeBlockId>2263</BeforeBlockId>
+<AfterBlockId>2287</AfterBlockId>
+<Sockets num-sockets="2" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="test" position-type="single" con-block-id="2269" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="cmd" init-type="cmd" label="do" is-indented="yes" position-type="single" con-block-id="2277" ></BlockConnector>
+</Sockets>
+</Block>
+<Block id="2263" genus-name="BluetoothClient-SendText" >
+<Location><X>442</X><Y>1495</Y></Location>
+<Comment>
+<Text>Envia por bluetooth, o comando ao arduino requerendo a leitura do sensor ultrass\u00f4nico.</Text><Location><X>220</X><Y>1459</Y></Location><BoxSize><Width>189</Width><Height>54</Height></BoxSize></Comment>
+<Label>bluetooth.SendText</Label>
+<BeforeBlockId>2259</BeforeBlockId>
+<AfterBlockId>2267</AfterBlockId>
+<Sockets num-sockets="1" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="text" position-type="single" con-block-id="2265" ></BlockConnector>
+</Sockets>
+</Block>
+<Block id="2259" genus-name="Clock-Timer" >
+<Location><X>414</X><Y>1462</Y></Location>
+<Comment>
+<Text>Essa fun\u00e7\u00e3o realiza a leitura da dist\u00e2ncia enviada pelo sensor ultrass\u00f4nico.</Text><Location><X>202</X><Y>1450</Y></Location><BoxSize><Width>191</Width><Height>60</Height></BoxSize></Comment>
+<Label>clock_Ultrassom.Timer</Label>
+<Sockets num-sockets="1" >
+<BlockConnector connector-kind="socket" connector-type="cmd" init-type="cmd" label="do" is-indented="yes" position-type="single" con-block-id="2263" ></BlockConnector>
+</Sockets>
+</Block>
+<Block id="2017" genus-name="argument" >
+<Location><X>1743</X><Y>1396</Y></Location>
+<Label>escolha</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="2013" ></BlockConnector></Plug>
+</Block>
+<BlockStub><StubParentName>escolha</StubParentName><StubParentGenus>argument</StubParentGenus><Block id="2025" genus-name="getter" >
+<Location><X>1616</X><Y>1439</Y></Location>
+<Label>escolha</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="2023" ></BlockConnector></Plug>
+</Block>
+</BlockStub>
+<Block id="2027" genus-name="text" >
+<Location><X>1767</X><Y>1439</Y></Location>
+<Label>Fechar</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="2023" ></BlockConnector></Plug>
+</Block>
+<Block id="2023" genus-name="yail-equal" >
+<Location><X>1606</X><Y>1432</Y></Location>
+<Label>=</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="2021" ></BlockConnector></Plug>
+<Sockets num-sockets="2" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="" position-type="bottom" con-block-id="2025" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="" position-type="bottom" con-block-id="2027" ></BlockConnector>
+</Sockets>
+</Block>
+<Block id="2029" genus-name="Player-Stop" >
+<Location><X>1546</X><Y>1473</Y></Location>
+<Label>player.Stop</Label>
+<BeforeBlockId>2021</BeforeBlockId>
+</Block>
+<BlockStub><StubParentName>escolha</StubParentName><StubParentGenus>argument</StubParentGenus><Block id="2035" genus-name="getter" >
+<Location><X>1667</X><Y>1522</Y></Location>
+<Label>escolha</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="2033" ></BlockConnector></Plug>
+</Block>
+</BlockStub>
+<Block id="2037" genus-name="text" >
+<Location><X>1818</X><Y>1522</Y></Location>
+<Label>Mais</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="2033" ></BlockConnector></Plug>
+</Block>
+<Block id="2033" genus-name="yail-equal" >
+<Location><X>1657</X><Y>1515</Y></Location>
+<Label>=</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="2041" ></BlockConnector></Plug>
+<Sockets num-sockets="2" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="" position-type="bottom" con-block-id="2035" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="" position-type="bottom" con-block-id="2037" ></BlockConnector>
+</Sockets>
+</Block>
+<BlockStub><StubParentName>sobre_segunda_Tela</StubParentName><StubParentGenus>define-void</StubParentGenus><Block id="2039" genus-name="caller-command" >
+<Location><X>1597</X><Y>1556</Y></Location>
+<Label>sobre_segunda_Tela</Label>
+<BeforeBlockId>2041</BeforeBlockId>
+</Block>
+</BlockStub>
+<BlockStub><StubParentName>escolha</StubParentName><StubParentGenus>argument</StubParentGenus><Block id="2045" genus-name="getter" >
+<Location><X>1694</X><Y>1605</Y></Location>
+<Label>escolha</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="2043" ></BlockConnector></Plug>
+</Block>
+</BlockStub>
+<Block id="2047" genus-name="text" >
+<Location><X>1845</X><Y>1605</Y></Location>
+<Label>Voltar</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="2043" ></BlockConnector></Plug>
+</Block>
+<Block id="2043" genus-name="yail-equal" >
+<Location><X>1684</X><Y>1598</Y></Location>
+<Label>=</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="2031" ></BlockConnector></Plug>
+<Sockets num-sockets="2" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="" position-type="bottom" con-block-id="2045" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="" position-type="bottom" con-block-id="2047" ></BlockConnector>
+</Sockets>
+</Block>
+<BlockStub><StubParentName>sobre_primeira_Tela</StubParentName><StubParentGenus>define-void</StubParentGenus><Block id="2049" genus-name="caller-command" >
+<Location><X>1648</X><Y>1639</Y></Location>
+<Label>sobre_primeira_Tela</Label>
+<BeforeBlockId>2031</BeforeBlockId>
+</Block>
+</BlockStub>
+<Block id="2031" genus-name="if" >
+<Location><X>1596</X><Y>1595</Y></Location>
+<Comment>
+<Text>Se escolheu \"Voltar\", chama o procedimento para abrir a primeira tela de informa\u00e7\u00f5es \"Sobre\".</Text><Location><X>1759</X><Y>1701</Y></Location><BoxSize><Width>195</Width><Height>67</Height></BoxSize></Comment>
+<Label>if</Label>
+<BeforeBlockId>2041</BeforeBlockId>
+<Sockets num-sockets="2" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="test" position-type="single" con-block-id="2043" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="cmd" init-type="cmd" label="then-do" is-indented="yes" position-type="single" con-block-id="2049" ></BlockConnector>
+</Sockets>
+</Block>
+<Block id="2041" genus-name="ifelse" >
+<Location><X>1545</X><Y>1512</Y></Location>
+<Comment>
+<Text>Se escolheu \"Mais\", chama o procedimento para a brir a segunda tela de informa\u00e7\u00f5es \"Sobre\".</Text><Location><X>1258</X><Y>1482</Y></Location><BoxSize><Width>203</Width><Height>55</Height></BoxSize></Comment>
+<Label>ifelse</Label>
+<BeforeBlockId>2021</BeforeBlockId>
+<Sockets num-sockets="3" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="test" position-type="single" con-block-id="2033" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="cmd" init-type="cmd" label="then-do" is-indented="yes" position-type="single" con-block-id="2039" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="cmd" init-type="cmd" label="else-do" is-indented="yes" position-type="single" con-block-id="2031" ></BlockConnector>
+</Sockets>
+</Block>
+<Block id="2021" genus-name="ifelse" >
+<Location><X>1494</X><Y>1429</Y></Location>
+<Comment>
+<Text>Se escolheu \"Fechar\", para a m\u00fasica e fecha a tela.</Text><Location><X>1251</X><Y>1408</Y></Location><BoxSize><Width>174</Width><Height>40</Height></BoxSize></Comment>
+<Label>ifelse</Label>
+<BeforeBlockId>2013</BeforeBlockId>
+<Sockets num-sockets="3" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="test" position-type="single" con-block-id="2023" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="cmd" init-type="cmd" label="then-do" is-indented="yes" position-type="single" con-block-id="2029" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="cmd" init-type="cmd" label="else-do" is-indented="yes" position-type="single" con-block-id="2041" ></BlockConnector>
+</Sockets>
+</Block>
+<Block id="2013" genus-name="Notifier-AfterChoosing" >
+<Location><X>1445</X><Y>1393</Y></Location>
+<Comment>
+<Text>\u00c9 executado ap\u00f3s o usu\u00e1rio clicar em algum bot\u00e3o da tela de informa\u00e7\u00f5es \"Sobre\".</Text><Location><X>1665</X><Y>1304</Y></Location><BoxSize><Width>188</Width><Height>59</Height></BoxSize></Comment>
+<Label>notificacao_Sobre.AfterChoosing</Label>
+<Sockets num-sockets="2" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="choice" position-type="single" con-block-id="2017" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="cmd" init-type="cmd" label="do" is-indented="yes" position-type="single" con-block-id="2021" ></BlockConnector>
+</Sockets>
+</Block>
+<Block id="1982" genus-name="define-void" >
+<Location><X>831</X><Y>746</Y></Location>
+<Comment>
+<Text>Procedimento que faz o dispositivo vibrar por 100ms.</Text><Location><X>1064</X><Y>721</Y></Location><BoxSize><Width>179</Width><Height>49</Height></BoxSize></Comment>
+<Label>vibrar</Label>
+<Sockets num-sockets="2" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="arg" is-expandable="yes" position-type="single" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="cmd" init-type="cmd" label="do" is-indented="yes" position-type="single" con-block-id="2075" ></BlockConnector>
+</Sockets>
+</Block>
+<Block id="1950" genus-name="true" >
+<Location><X>1035</X><Y>935</Y></Location>
+<Label>true</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="1948" ></BlockConnector></Plug>
+</Block>
+<Block id="1952" genus-name="Player-Start" >
+<Location><X>867</X><Y>970</Y></Location>
+<Comment>
+<Text>Toca a m\u00fasica.</Text><Location><X>1142</X><Y>978</Y></Location><BoxSize><Width>112</Width><Height>28</Height></BoxSize></Comment>
+<Label>player.Start</Label>
+<BeforeBlockId>1948</BeforeBlockId>
+<AfterBlockId>2078</AfterBlockId>
+</Block>
+<BlockStub><StubParentName>player.IsLooping</StubParentName><StubParentGenus>read-write-property</StubParentGenus><Block id="1948" genus-name="componentSetter" >
+<Location><X>867</X><Y>932</Y></Location>
+<Comment>
+<Text>Ativa o looping da m\u00fasica de fundo.</Text><Location><X>1126</X><Y>934</Y></Location><BoxSize><Width>200</Width><Height>33</Height></BoxSize></Comment>
+<Label>player.IsLooping</Label>
+<BeforeBlockId>2092</BeforeBlockId>
+<AfterBlockId>1952</AfterBlockId>
+<Sockets num-sockets="1" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="to" position-type="single" con-block-id="1950" ></BlockConnector>
+</Sockets>
+</Block>
+</BlockStub>
+<Block id="1865" genus-name="define-void" >
+<Location><X>835</X><Y>865</Y></Location>
+<Comment>
+<Text>Procedimento que abre a tela de informa\u00e7\u00f5es \"Sobre\".</Text><Location><X>1084</X><Y>821</Y></Location><BoxSize><Width>196</Width><Height>48</Height></BoxSize></Comment>
+<Label>abre_Sobre</Label>
+<Sockets num-sockets="2" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="arg" is-expandable="yes" position-type="single" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="cmd" init-type="cmd" label="do" is-indented="yes" position-type="single" con-block-id="2092" ></BlockConnector>
+</Sockets>
+</Block>
+<BlockStub><StubParentName>sobre_Int</StubParentName><StubParentGenus>def</StubParentGenus><Block id="2011" genus-name="getterGlobal" >
+<Location><X>2346</X><Y>1560</Y></Location>
+<Label>sobre_Int</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="1999" ></BlockConnector></Plug>
+</Block>
+</BlockStub>
+<Block id="2003" genus-name="text" >
+<Location><X>2346</X><Y>1588</Y></Location>
+<Label>Sobre</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="1999" ></BlockConnector></Plug>
+</Block>
+<Block id="2005" genus-name="text" >
+<Location><X>2346</X><Y>1616</Y></Location>
+<Label>Voltar</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="1999" ></BlockConnector></Plug>
+</Block>
+<Block id="2007" genus-name="text" >
+<Location><X>2346</X><Y>1644</Y></Location>
+<Label>Fechar</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="1999" ></BlockConnector></Plug>
+</Block>
+<Block id="2009" genus-name="false" >
+<Location><X>2346</X><Y>1672</Y></Location>
+<Label>false</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="1999" ></BlockConnector></Plug>
+</Block>
+<Block id="1999" genus-name="Notifier-ShowChooseDialog" >
+<Location><X>2016</X><Y>1557</Y></Location>
+<Label>notificacao_Sobre.ShowChooseDialog</Label>
+<BeforeBlockId>1981</BeforeBlockId>
+<Sockets num-sockets="5" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="message" position-type="single" con-block-id="2011" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="title" position-type="single" con-block-id="2003" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="button1Text" position-type="single" con-block-id="2005" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="button2Text" position-type="single" con-block-id="2007" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="cancelable" position-type="single" con-block-id="2009" ></BlockConnector>
+</Sockets>
+</Block>
+<Block id="1981" genus-name="define-void" >
+<Location><X>1984</X><Y>1528</Y></Location>
+<Comment>
+<Text>Procedimento que exibe a segunda tela de inform\u00e7\u00f5es \"Sobre\".</Text><Location><X>2085</X><Y>1478</Y></Location><BoxSize><Width>202</Width><Height>48</Height></BoxSize></Comment>
+<Label>sobre_segunda_Tela</Label>
+<Sockets num-sockets="2" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="arg" is-expandable="yes" position-type="single" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="cmd" init-type="cmd" label="do" is-indented="yes" position-type="single" con-block-id="1999" ></BlockConnector>
+</Sockets>
+</Block>
+<BlockStub><StubParentName>sobre_Princ</StubParentName><StubParentGenus>def</StubParentGenus><Block id="1877" genus-name="getterGlobal" >
+<Location><X>2346</X><Y>1307</Y></Location>
+<Label>sobre_Princ</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="1975" ></BlockConnector></Plug>
+</Block>
+</BlockStub>
+<Block id="1883" genus-name="text" >
+<Location><X>2346</X><Y>1335</Y></Location>
+<Label>Sobre</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="1975" ></BlockConnector></Plug>
+</Block>
+<Block id="1885" genus-name="text" >
+<Location><X>2346</X><Y>1363</Y></Location>
+<Label>Mais</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="1975" ></BlockConnector></Plug>
+</Block>
+<Block id="1977" genus-name="text" >
+<Location><X>2346</X><Y>1391</Y></Location>
+<Label>Fechar</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="1975" ></BlockConnector></Plug>
+</Block>
+<Block id="1979" genus-name="false" >
+<Location><X>2346</X><Y>1419</Y></Location>
+<Label>false</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="1975" ></BlockConnector></Plug>
+</Block>
+<Block id="1975" genus-name="Notifier-ShowChooseDialog" >
+<Location><X>2016</X><Y>1304</Y></Location>
+<Label>notificacao_Sobre.ShowChooseDialog</Label>
+<BeforeBlockId>1958</BeforeBlockId>
+<Sockets num-sockets="5" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="message" position-type="single" con-block-id="1877" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="title" position-type="single" con-block-id="1883" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="button1Text" position-type="single" con-block-id="1885" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="button2Text" position-type="single" con-block-id="1977" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="cancelable" position-type="single" con-block-id="1979" ></BlockConnector>
+</Sockets>
+</Block>
+<Block id="1958" genus-name="define-void" >
+<Location><X>1984</X><Y>1275</Y></Location>
+<Comment>
+<Text>Procedimento que exibe a primeira tela de inform\u00e7\u00f5es \"Sobre\".</Text><Location><X>1847</X><Y>1214</Y></Location><BoxSize><Width>199</Width><Height>47</Height></BoxSize></Comment>
+<Label>sobre_primeira_Tela</Label>
+<Sockets num-sockets="2" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="arg" is-expandable="yes" position-type="single" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="cmd" init-type="cmd" label="do" is-indented="yes" position-type="single" con-block-id="1975" ></BlockConnector>
+</Sockets>
+</Block>
+<BlockStub><StubParentName>sobre_primeira_Tela</StubParentName><StubParentGenus>define-void</StubParentGenus><Block id="2060" genus-name="caller-command" >
+<Location><X>867</X><Y>1026</Y></Location>
+<Comment>
+<Text>Chama procedimento para abrir a primeira tela de informa\u00e7\u00f5es \"Sobre\".</Text><Location><X>1070</X><Y>1030</Y></Location><BoxSize><Width>180</Width><Height>56</Height></BoxSize></Comment>
+<Label>sobre_primeira_Tela</Label>
+<BeforeBlockId>2078</BeforeBlockId>
+</Block>
+</BlockStub>
+<BlockStub><StubParentName>ada</StubParentName><StubParentGenus>def</StubParentGenus><Block id="2255" genus-name="getterGlobal" >
+<Location><X>1978</X><Y>650</Y></Location>
+<Label>ada</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="2251" ></BlockConnector></Plug>
+</Block>
+</BlockStub>
+<BlockStub><StubParentName>reconhecedor_Voz.Result</StubParentName><StubParentGenus>read-only-property</StubParentGenus><Block id="2074" genus-name="componentGetter" >
+<Location><X>1702</X><Y>69</Y></Location>
+<Label>reconhecedor_Voz.Result</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="2181" ></BlockConnector></Plug>
+</Block>
+</BlockStub>
+<Block id="2066" genus-name="text" >
+<Location><X>1266</X><Y>349</Y></Location>
+<Label>Aguarde um instante!</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="2061" ></BlockConnector></Plug>
+</Block>
+<Block id="2157" genus-name="true" >
+<Location><X>1248</X><Y>387</Y></Location>
+<Label>true</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="2155" ></BlockConnector></Plug>
+</Block>
+<BlockStub><StubParentName>desconectar</StubParentName><StubParentGenus>define-void</StubParentGenus><Block id="2153" genus-name="caller-command" >
+<Location><X>1004</X><Y>422</Y></Location>
+<Comment>
+<Text>Chama o procedimento respons\u00e1vel pela desconex\u00e3o. O procedimento fechar ser\u00e1 totalmente executado em 2s, ou seja o valor da vari\u00e1vel \"tempo_Desconectar\", que foi passada para a fun\u00e7\u00e3o sleep. Isso foi utilizado para garantir qua ao abrir a outra tela o bluetooth tenha sido completamente desconectado.</Text><Location><X>1229</X><Y>414</Y></Location><BoxSize><Width>255</Width><Height>119</Height></BoxSize></Comment>
+<Label>desconectar</Label>
+<BeforeBlockId>2155</BeforeBlockId>
+</Block>
+</BlockStub>
+<BlockStub><StubParentName>clock_Conexao.TimerEnabled</StubParentName><StubParentGenus>read-write-property</StubParentGenus><Block id="2155" genus-name="componentSetter" >
+<Location><X>1004</X><Y>384</Y></Location>
+<Comment>
+<Text>Ativa a fun\u00e7\u00e3o Sleep.</Text><Location><X>1321</X><Y>436</Y></Location><BoxSize><Width>142</Width><Height>30</Height></BoxSize></Comment>
+<Label>clock_Conexao.TimerEnabled</Label>
+<BeforeBlockId>2061</BeforeBlockId>
+<AfterBlockId>2153</AfterBlockId>
+<Sockets num-sockets="1" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="to" position-type="single" con-block-id="2157" ></BlockConnector>
+</Sockets>
+</Block>
+</BlockStub>
+<Block id="2061" genus-name="Notifier-ShowAlert" >
+<Location><X>1004</X><Y>346</Y></Location>
+<Comment>
+<Text>Exibe mensagem ao usu\u00e1rio.</Text><Location><X>1155</X><Y>301</Y></Location><BoxSize><Width>163</Width><Height>30</Height></BoxSize></Comment>
+<Label>notificacao_Geral.ShowAlert</Label>
+<BeforeBlockId>2147</BeforeBlockId>
+<AfterBlockId>2155</AfterBlockId>
+<Sockets num-sockets="1" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="notice" position-type="single" con-block-id="2066" ></BlockConnector>
+</Sockets>
+</Block>
+<Block id="2147" genus-name="define-void" >
+<Location><X>972</X><Y>317</Y></Location>
+<Comment>
+<Text>Procedimento que fecha o app.</Text><Location><X>1148</X><Y>290</Y></Location><BoxSize><Width>183</Width><Height>28</Height></BoxSize></Comment>
+<Label>fechar</Label>
+<Sockets num-sockets="2" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="arg" is-expandable="yes" position-type="single" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="cmd" init-type="cmd" label="do" is-indented="yes" position-type="single" con-block-id="2061" ></BlockConnector>
+</Sockets>
+</Block>
+<Block id="2046" genus-name="number" >
+<Location><X>1061</X><Y>778</Y></Location>
+<Label>100</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="2075" ></BlockConnector></Plug>
+</Block>
+<Block id="2075" genus-name="Player-Vibrate" >
+<Location><X>863</X><Y>775</Y></Location>
+<Label>player.Vibrate</Label>
+<BeforeBlockId>1982</BeforeBlockId>
+<Sockets num-sockets="1" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="milliseconds" position-type="single" con-block-id="2046" ></BlockConnector>
+</Sockets>
+</Block>
+<BlockStub><StubParentName>vibrar</StubParentName><StubParentGenus>define-void</StubParentGenus><Block id="2078" genus-name="caller-command" >
+<Location><X>867</X><Y>998</Y></Location>
+<Label>vibrar</Label>
+<BeforeBlockId>1952</BeforeBlockId>
+<AfterBlockId>2060</AfterBlockId>
+</Block>
+</BlockStub>
+<Block id="2040" genus-name="argument" >
+<Location><X>1601</X><Y>1106</Y></Location>
+<Label>path</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="2034" ></BlockConnector></Plug>
+</Block>
+<Block id="2083" genus-name="false" >
+<Location><X>1669</X><Y>1166</Y></Location>
+<Label>false</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="2080" ></BlockConnector></Plug>
+</Block>
+<BlockStub><StubParentName>path</StubParentName><StubParentGenus>argument</StubParentGenus><Block id="2050" genus-name="getter" >
+<Location><X>1655</X><Y>1204</Y></Location>
+<Label>path</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="2085" ></BlockConnector></Plug>
+</Block>
+</BlockStub>
+<Block id="2087" genus-name="Player-Start" >
+<Location><X>1501</X><Y>1267</Y></Location>
+<Comment>
+<Text>Toca a m\u00fasica.</Text><Location><X>1338</X><Y>1268</Y></Location><BoxSize><Width>118</Width><Height>26</Height></BoxSize></Comment>
+<Label>player.Start</Label>
+<BeforeBlockId>2052</BeforeBlockId>
+</Block>
+<BlockStub><StubParentName>vibrar</StubParentName><StubParentGenus>define-void</StubParentGenus><Block id="2052" genus-name="caller-command" >
+<Location><X>1501</X><Y>1239</Y></Location>
+<Label>vibrar</Label>
+<BeforeBlockId>2085</BeforeBlockId>
+<AfterBlockId>2087</AfterBlockId>
+</Block>
+</BlockStub>
+<BlockStub><StubParentName>player.Source</StubParentName><StubParentGenus>read-write-property</StubParentGenus><Block id="2085" genus-name="componentSetter" >
+<Location><X>1501</X><Y>1201</Y></Location>
+<Comment>
+<Text>Abre a m\u00fasica de nome \"path\"</Text><Location><X>1277</X><Y>1185</Y></Location><BoxSize><Width>181</Width><Height>39</Height></BoxSize></Comment>
+<Label>player.Source</Label>
+<BeforeBlockId>2080</BeforeBlockId>
+<AfterBlockId>2052</AfterBlockId>
+<Sockets num-sockets="1" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="to" position-type="single" con-block-id="2050" ></BlockConnector>
+</Sockets>
+</Block>
+</BlockStub>
+<BlockStub><StubParentName>player.IsLooping</StubParentName><StubParentGenus>read-write-property</StubParentGenus><Block id="2080" genus-name="componentSetter" >
+<Location><X>1501</X><Y>1163</Y></Location>
+<Comment>
+<Text>Desativa o looping da m\u00fasica.</Text><Location><X>1278</X><Y>1140</Y></Location><BoxSize><Width>177</Width><Height>35</Height></BoxSize></Comment>
+<Label>player.IsLooping</Label>
+<BeforeBlockId>2034</BeforeBlockId>
+<AfterBlockId>2085</AfterBlockId>
+<Sockets num-sockets="1" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="to" position-type="single" con-block-id="2083" ></BlockConnector>
+</Sockets>
+</Block>
+</BlockStub>
+<Block id="2034" genus-name="define-void" >
+<Location><X>1469</X><Y>1106</Y></Location>
+<Comment>
+<Text>Fun\u00e7\u00e3o respons\u00e1vel por tocar a m\u00fasica de nome \"path\".</Text><Location><X>1267</X><Y>1042</Y></Location><BoxSize><Width>177</Width><Height>42</Height></BoxSize></Comment>
+<Label>play_Som</Label>
+<Sockets num-sockets="3" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="arg" is-expandable="yes" position-type="single" con-block-id="2040" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="arg" is-expandable="yes" position-type="single" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="cmd" init-type="cmd" label="do" is-indented="yes" position-type="single" con-block-id="2080" ></BlockConnector>
+</Sockets>
+</Block>
+<BlockStub><StubParentName>player.Source</StubParentName><StubParentGenus>read-write-property</StubParentGenus><Block id="2092" genus-name="componentSetter" >
+<Location><X>867</X><Y>894</Y></Location>
+<Comment>
+<Text>Abre a m\u00fasica de fundo.</Text><Location><X>1112</X><Y>870</Y></Location><BoxSize><Width>147</Width><Height>34</Height></BoxSize></Comment>
+<Label>player.Source</Label>
+<BeforeBlockId>1865</BeforeBlockId>
+<AfterBlockId>1948</AfterBlockId>
+<Sockets num-sockets="1" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="to" position-type="single" con-block-id="2096" ></BlockConnector>
+</Sockets>
+</Block>
+</BlockStub>
+<Block id="2096" genus-name="text" >
+<Location><X>1021</X><Y>897</Y></Location>
+<Label>som_Sobre.mp3</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="2092" ></BlockConnector></Plug>
+</Block>
+</PageBlocks>
+</Page>
+
+</Pages><YoungAndroidMaps><YoungAndroidUuidMap>
+<YoungAndroidUuidEntry uuid="-423057177" component-id="arrang_Dir" component-genus="HorizontalArrangement" component-version="2" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="-1612762859" component-id="arrang_Distancia_Label" component-genus="HorizontalArrangement" component-version="2" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="1551645956" component-id="label_Distancia" component-genus="Label" component-version="2" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="-75692961" component-id="btn_Voltar" component-genus="Button" component-version="5" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="953168046" component-id="leitor_Texto" component-genus="TextToSpeech" component-version="1" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="1152565711" component-id="btn_Voz" component-genus="Button" component-version="5" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="856914314" component-id="arrang_Topo" component-genus="HorizontalArrangement" component-version="2" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="-1934388382" component-id="clock_Ultrassom" component-genus="Clock" component-version="1" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="2057639489" component-id="val_Distancia" component-genus="Label" component-version="2" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="2027987452" component-id="arrang_Distancia_Val" component-genus="HorizontalArrangement" component-version="2" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="1445548402" component-id="bluetooth" component-genus="BluetoothClient" component-version="5" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="-1239384974" component-id="reconhecedor_Voz" component-genus="SpeechRecognizer" component-version="1" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="-1971741531" component-id="notificacao_Geral" component-genus="Notifier" component-version="2" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="0" component-id="monitoramento" component-genus="Form" component-version="0" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="762561452" component-id="btn_Sobre" component-genus="Button" component-version="5" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="1478539013" component-id="arrang_Distancia" component-genus="HorizontalArrangement" component-version="2" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="-1756978968" component-id="clock_Conexao" component-genus="Clock" component-version="1" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="1423743711" component-id="player" component-genus="Player" component-version="4" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="1599958943" component-id="btn_Ajuda" component-genus="Button" component-version="5" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="-35873981" component-id="arrang_Principal" component-genus="VerticalArrangement" component-version="2" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="-960356275" component-id="arrang_Esq" component-genus="HorizontalArrangement" component-version="2" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="1209202329" component-id="notificacao_Sobre" component-genus="Notifier" component-version="2" ></YoungAndroidUuidEntry>
+</YoungAndroidUuidMap>
+</YoungAndroidMaps>
+</YACodeBlocks>

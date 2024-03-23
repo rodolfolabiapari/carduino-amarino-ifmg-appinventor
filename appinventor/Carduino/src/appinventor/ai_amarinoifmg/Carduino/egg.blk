@@ -1,0 +1,135 @@
+<!DOCTYPE YACodeBlocks SYSTEM "support/save_format.dtd">
+<YACodeBlocks ya-version="75" lang-version="17">
+<Pages><Page page-name=" " page-color="237 245 211" page-width="1366" page-height="1600" page-drawer="My Definitions" >
+<PageBlocks>
+<Block id="867" genus-name="Canvas-TouchDown" >
+<Location><X>82</X><Y>147</Y></Location>
+<Label>canvas_Egg.TouchDown</Label>
+<Sockets num-sockets="3" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="x" position-type="single" con-block-id="871" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="y" position-type="single" con-block-id="873" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="cmd" init-type="cmd" label="do" is-indented="yes" position-type="single" con-block-id="881" ></BlockConnector>
+</Sockets>
+</Block>
+<BlockStub><StubParentName>canvas_Egg.BackgroundImage</StubParentName><StubParentGenus>read-write-property</StubParentGenus><Block id="881" genus-name="componentSetter" >
+<Location><X>110</X><Y>211</Y></Location>
+<Label>canvas_Egg.BackgroundImage</Label>
+<BeforeBlockId>867</BeforeBlockId>
+<Sockets num-sockets="1" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="to" position-type="single" con-block-id="883" ></BlockConnector>
+</Sockets>
+</Block>
+</BlockStub>
+<Block id="883" genus-name="text" >
+<Location><X>346</X><Y>214</Y></Location>
+<Label>egg_Dist.jpg</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="881" ></BlockConnector></Plug>
+</Block>
+<Block id="873" genus-name="argument" >
+<Location><X>296</X><Y>178</Y></Location>
+<Label>y</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="867" ></BlockConnector></Plug>
+</Block>
+<Block id="871" genus-name="argument" >
+<Location><X>296</X><Y>150</Y></Location>
+<Label>x</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="867" ></BlockConnector></Plug>
+</Block>
+<BlockStub><StubParentName>cria_Egg</StubParentName><StubParentGenus>define-void</StubParentGenus><Block id="903" genus-name="caller-command" >
+<Location><X>585</X><Y>209</Y></Location>
+<Label>cria_Egg</Label>
+<BeforeBlockId>885</BeforeBlockId>
+</Block>
+</BlockStub>
+<Block id="567" genus-name="Screen-Initialize" >
+<Location><X>80</X><Y>13</Y></Location>
+<Label>egg.Initialize</Label>
+<Sockets num-sockets="1" >
+<BlockConnector connector-kind="socket" connector-type="cmd" init-type="cmd" label="do" is-indented="yes" position-type="single" con-block-id="942" ></BlockConnector>
+</Sockets>
+</Block>
+<Block id="942" genus-name="Notifier-ShowAlert" >
+<Location><X>108</X><Y>46</Y></Location>
+<Label>notificacao.ShowAlert</Label>
+<BeforeBlockId>567</BeforeBlockId>
+<AfterBlockId>571</AfterBlockId>
+<Sockets num-sockets="1" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="notice" position-type="single" con-block-id="940" ></BlockConnector>
+</Sockets>
+</Block>
+<BlockStub><StubParentName>cria_Egg</StubParentName><StubParentGenus>define-void</StubParentGenus><Block id="571" genus-name="caller-command" >
+<Location><X>108</X><Y>84</Y></Location>
+<Label>cria_Egg</Label>
+<BeforeBlockId>942</BeforeBlockId>
+</Block>
+</BlockStub>
+<Block id="940" genus-name="text" >
+<Location><X>320</X><Y>49</Y></Location>
+<Label>Cara que loucura!!</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="942" ></BlockConnector></Plug>
+</Block>
+<Block id="874" genus-name="close-screen" >
+<Location><X>106</X><Y>352</Y></Location>
+<Label>close screen</Label>
+<BeforeBlockId>910</BeforeBlockId>
+</Block>
+<Block id="910" genus-name="Screen-BackPressed" >
+<Location><X>78</X><Y>319</Y></Location>
+<Label>egg.BackPressed</Label>
+<Sockets num-sockets="1" >
+<BlockConnector connector-kind="socket" connector-type="cmd" init-type="cmd" label="do" is-indented="yes" position-type="single" con-block-id="874" ></BlockConnector>
+</Sockets>
+</Block>
+<Block id="891" genus-name="argument" >
+<Location><X>755</X><Y>176</Y></Location>
+<Label>y1</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="885" ></BlockConnector></Plug>
+</Block>
+<Block id="889" genus-name="argument" >
+<Location><X>755</X><Y>148</Y></Location>
+<Label>x1</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="885" ></BlockConnector></Plug>
+</Block>
+<Block id="885" genus-name="Canvas-TouchUp" >
+<Location><X>557</X><Y>145</Y></Location>
+<Label>canvas_Egg.TouchUp</Label>
+<Sockets num-sockets="3" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="x" position-type="single" con-block-id="889" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="y" position-type="single" con-block-id="891" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="cmd" init-type="cmd" label="do" is-indented="yes" position-type="single" con-block-id="903" ></BlockConnector>
+</Sockets>
+</Block>
+<Block id="865" genus-name="text" >
+<Location><X>819</X><Y>58</Y></Location>
+<Label>egg.jpg</Label>
+<Plug><BlockConnector connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="single" con-block-id="863" ></BlockConnector></Plug>
+</Block>
+<BlockStub><StubParentName>canvas_Egg.BackgroundImage</StubParentName><StubParentGenus>read-write-property</StubParentGenus><Block id="863" genus-name="componentSetter" >
+<Location><X>583</X><Y>55</Y></Location>
+<Label>canvas_Egg.BackgroundImage</Label>
+<BeforeBlockId>561</BeforeBlockId>
+<Sockets num-sockets="1" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="to" position-type="single" con-block-id="865" ></BlockConnector>
+</Sockets>
+</Block>
+</BlockStub>
+<Block id="561" genus-name="define-void" >
+<Location><X>551</X><Y>26</Y></Location>
+<Label>cria_Egg</Label>
+<Sockets num-sockets="2" >
+<BlockConnector connector-kind="socket" connector-type="poly" init-type="poly" label="arg" is-expandable="yes" position-type="single" ></BlockConnector>
+<BlockConnector connector-kind="socket" connector-type="cmd" init-type="cmd" label="do" is-indented="yes" position-type="single" con-block-id="863" ></BlockConnector>
+</Sockets>
+</Block>
+</PageBlocks>
+</Page>
+
+</Pages><YoungAndroidMaps><YoungAndroidUuidMap>
+<YoungAndroidUuidEntry uuid="0" component-id="egg" component-genus="Form" component-version="0" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="-674760818" component-id="notificacao" component-genus="Notifier" component-version="2" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="1512756277" component-id="canvas_Egg" component-genus="Canvas" component-version="7" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="-1967042278" component-id="VerticalArrangement1" component-genus="VerticalArrangement" component-version="2" ></YoungAndroidUuidEntry>
+<YoungAndroidUuidEntry uuid="-623942650" component-id="player" component-genus="Player" component-version="4" ></YoungAndroidUuidEntry>
+</YoungAndroidUuidMap>
+</YoungAndroidMaps>
+</YACodeBlocks>

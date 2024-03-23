@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jnlp spec="1.0+" codebase="http://beta.appinventor.mit.edu:80/ode2/webstartfile/v134_d72c6vqyw9dp94xtc56wykdt0byagv4td1pw4x8g36ehmcegso3s9srf09jbw5wursj2c9d8803qsbe7cv48zibupsxa6x86j76e3stklq88w9uiqeuhtn6euh64mjaifpwps9ob77">
+   <information>
+      <title>App Inventor for Android Blocks Editor</title>
+      <vendor>MIT Center for Mobile Learning</vendor>
+      <description>App Inventor for Android Blocks Editor</description>
+   </information>
+   <security>
+      <all-permissions/>
+   </security>
+   <update check="always" policy="always"/>
+   <resources>
+      <j2se version="1.5+" max-heap-size="925m" java-vm-args=""/>
+      <jar href="BlocksEditor.jar"/>
+   </resources>
+   <application-desc main-class="com.google.appinventor.blockseditor.youngandroid.YaHttpServerMain">
+      <argument>http://beta.appinventor.mit.edu:80/ode2/webstartfile/</argument>
+      <argument>v134_d72c6vqyw9dp94xtc56wykdt0byagv4td1pw4x8g36ehmcegso3s9srf09jbw5wursj2c9d8803qsbe7cv48zibupsxa6x86j76e3stklq88w9uiqeuhtn6euh64mjaifpwps9ob77/</argument>
+   </application-desc>
+</jnlp>
